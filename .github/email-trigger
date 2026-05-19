@@ -1,0 +1,5 @@
+Touch this file (and bump the value below) to manually trigger a one-off run
+of the email-weekly-report workflow on this branch.
+
+trigger: 1
+last-bump: 2026-05-19T10:08:00Z
