@@ -11,13 +11,6 @@ on:
         description: "Optional explicit path to an HTML report to email."
         required: false
         type: string
-  # Temporary trigger: fire when the email-trigger marker file changes on this
-  # branch, so we can send a one-off preview email. Remove after testing.
-  push:
-    branches:
-      - cursor/mcp-competitive-intelligence-9808
-    paths:
-      - ".github/email-trigger"
 
 jobs:
   send:
