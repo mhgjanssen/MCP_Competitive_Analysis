@@ -11,6 +11,12 @@ on:
         description: "Optional explicit path to an HTML report to email."
         required: false
         type: string
+  # One-off push trigger: lets the cloud agent fire the email immediately
+  # when a new weekly report is committed from a feature branch (the cron
+  # only runs from the default branch). Touch .github/email-trigger to send.
+  push:
+    paths:
+      - ".github/email-trigger"
 
 jobs:
   send:

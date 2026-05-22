@@ -1,0 +1,6 @@
+# One-off push trigger
+# Touching this file from a feature branch fires the email-weekly-report workflow
+# so the Friday MCP competitive update is delivered even before the branch is
+# merged to the default branch.
+report: 2026-05-22_weekly_mcp_competitive_update.html
+triggered_at: 2026-05-22T15:10:00Z
