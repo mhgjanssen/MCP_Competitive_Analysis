@@ -1,10 +1,18 @@
 name: Email weekly MCP competitive report
 
 on:
-  # Fire shortly after the Cursor cloud agent cron (Fridays 15:00 UTC).
-  # Cushion gives the agent time to commit the new report before we email it.
+  # Backstop: Friday 15:30 UTC cron, in case no push trigger has fired.
   schedule:
     - cron: "30 15 * * 5"
+  # Primary trigger: any push to a Cursor cloud-agent weekly-report branch
+  # that touches a file under reports/. The cloud agent runs on Fridays
+  # 15:00 UTC and commits a new HTML/MD report to its own branch; this
+  # push event triggers the workflow on that branch and emails the report.
+  push:
+    branches:
+      - "cursor/mcp-competitive-intelligence-report-*"
+    paths:
+      - "reports/**"
   workflow_dispatch:
     inputs:
       report_path:
