@@ -1,0 +1,55 @@
+name: Email weekly MCP competitive report
+
+on:
+  # Backstop: Friday 15:30 UTC cron, in case no push trigger has fired.
+  schedule:
+    - cron: "30 15 * * 5"
+  # Primary trigger: any push to a Cursor cloud-agent weekly-report branch
+  # that touches a file under reports/. The cloud agent runs on Fridays
+  # 15:00 UTC and commits a new HTML/MD report to its own branch; this
+  # push event triggers the workflow on that branch and emails the report.
+  push:
+    branches:
+      - "cursor/mcp-competitive-intelligence-report-*"
+    paths:
+      - "reports/**"
+  workflow_dispatch:
+    inputs:
+      report_path:
+        description: "Optional explicit path to an HTML report to email."
+        required: false
+        type: string
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send latest weekly report
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_SECURITY: ${{ secrets.SMTP_SECURITY }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          set -euo pipefail
+          if [ -n "${{ inputs.report_path }}" ]; then
+            python scripts/send_report_email.py "${{ inputs.report_path }}"
+          else
+            python scripts/send_report_email.py
+          fi
