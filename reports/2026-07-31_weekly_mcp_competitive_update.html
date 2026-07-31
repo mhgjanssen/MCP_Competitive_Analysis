@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weekly MCP Competitive Update – July 24, 2026 to July 31, 2026</title>
+  </head>
+  <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1f2937;line-height:1.5;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f4f5f7;">
+      <tr>
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="background:#0f172a;padding:20px 24px;color:#ffffff;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;">Weekly MCP Competitive Update</div>
+                <div style="font-size:18px;font-weight:600;margin-top:4px;">July 24, 2026 &mdash; July 31, 2026</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:24px;">
+                <p style="margin:0 0 16px 0;">Hi Mark,</p>
+                <p style="margin:0 0 16px 0;">Here is this week's concise MCP competitive intelligence update.</p>
+
+                <h2 style="margin:24px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">1. Executive Summary</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;">The MCP <code>2026-07-28</code> specification (the largest revision since launch &mdash; stateless core, hardened OAuth 2.0/OIDC, versioned Apps/Tasks extensions) shipped on schedule on July 28 with Tier-1 SDKs GA and Anthropic + AWS AgentCore Gateway compatible on day one. None of the nine tracked vendors has yet published a public compatibility statement; Informatica's MCP docs still reference protocol <code>2025-06-18</code>.</li>
+                  <li style="margin-bottom:6px;">Informatica opened a <strong>private preview of two new MCP servers</strong> &mdash; Catalog Discovery and Catalog Enrichment &mdash; in the IDMC July 2026 release, extending the MCP surface further into governed metadata search and enrichment.</li>
+                  <li style="margin-bottom:6px;">SAP's Q2 2026 earnings call (July 28) re-anchored the entire AI narrative on the AI Agent Hub as &ldquo;the command center to discover, manage and govern SAP and non-SAP agents, MCP servers and more&rdquo; and confirmed value-based agent pricing plus oversubscribed Joule Work beta demand.</li>
+                  <li style="margin-bottom:6px;">Reltio's 2026.1.7.0 bi-weekly release (PRD July 31) adds an <strong>AI-assisted Agent Blueprint</strong> feature that generates initial agent configuration, system prompt and recommended MCP tools from natural language &mdash; a direct answer to Profisee's Aisey and Akeneo's Agentic Ziggy on ease-of-authoring.</li>
+                  <li style="margin-bottom:0;">Salsify and Syndigo continued to push MCP-adjacent &ldquo;agentic shelf&rdquo; messaging (new 3-part Salsify webinar series; Novi&ndash;Syndigo AI-optimized content pipeline into Amazon/Walmart/Target) without adding explicit MCP capabilities.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">2. Key Updates This Week</h2>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Informatica <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> The IDMC July 2026 release &ldquo;Important Notices&rdquo; pages (Data Governance &amp; Catalog and Informatica MCP servers / AI Agent Engineering) confirm that two new MCP servers &mdash; <strong>Catalog Discovery</strong> and <strong>Catalog Enrichment</strong> &mdash; are now in private preview. This extends the previously announced GA MCP server set (metadata search, data quality, MDM, etc.) further into governed catalog discovery and enrichment workflows. Separately, Informatica's public MCP docs still reference protocol version <code>2025-06-18</code> as of July 31 &mdash; no public compatibility statement yet for the new <code>2026-07-28</code> spec.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Continues Informatica's &ldquo;MCP everywhere&rdquo; pace-setting; the catalog-side MCP surface is where semantic and governance context flow to agents &mdash; directly analogous to how Stibo Systems would expose MDM context via MCP.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://docs.informatica.com/release-information/what-s-new-in-idmc/current-version/what-s-new/data-governance-and-catalog/important-notices.html" style="color:#2563eb;text-decoration:none;">Data Governance and Catalog &mdash; Important notices (July 2026)</a></li>
+                          <li><a href="https://docs.informatica.com/release-information/what-s-new-in-idmc/current-version/what-s-new/informatica-mcp-servers-and-ai-agent-engineering/important-notices.html" style="color:#2563eb;text-decoration:none;">Informatica MCP servers and AI Agent Engineering &mdash; Important notices (July 2026)</a></li>
+                          <li><a href="https://docs.informatica.com/claire/mcp-servers/current-version/getting-started-with-informatica-mcp-servers/introduction-to-informatica-mcp-servers.html" style="color:#2563eb;text-decoration:none;">Introduction to Informatica MCP servers (still references protocol 2025-06-18)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">SAP MDG <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> SAP's Q2 2026 earnings call on July 28 re-centered its AI story on the <strong>AI Agent Hub</strong> &mdash; CEO Christian Klein positioned it as &ldquo;our command center to discover, manage and govern SAP and non-SAP agents, MCP servers and more&rdquo; &mdash; and confirmed that agents will be priced &ldquo;based on value.&rdquo; Beta programs for Joule Work and the new Suite were &ldquo;immediately oversubscribed.&rdquo; A companion SAP Sapphire 2026 glossary published the same day fixes Q4 2026 GA for enhanced A2A in Joule, introduces a dedicated <strong>ABAP MCP</strong> in the ABAP development environment, and formalizes NVIDIA / Anthropic / n8n as first-class partners inside Joule Studio. Because MDG data reaches AI via SAP Business Data Cloud, MDG continues to inherit this MCP posture by default &mdash; but there is still no MDG-specific roadmap communication.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> SAP is now explicitly using &ldquo;MCP servers&rdquo; in the CEO's earnings-call vocabulary &mdash; a signal that MCP has crossed from technical spec into commercial narrative, and that the Hub / Gateway / Joule Studio stack is the endorsed pathway for MDG-adjacent MCP tooling.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.cxtoday.com/ai-automation-in-cx/sap-ai-agents-customer-service-wins/" style="color:#2563eb;text-decoration:none;">SAP AI Agents: Where Are the CX Wins? &mdash; CX Today (July 28, 2026)</a></li>
+                          <li><a href="https://s-peers.com/en/wiki/sap-sapphire-2026-glossar/" style="color:#2563eb;text-decoration:none;">SAP Sapphire 2026 Glossary: AI Agents &amp; Joule (s-peers, July 28, 2026)</a></li>
+                          <li><a href="https://btp-ai-bp.docs.sap/docs/technical-view/agentic-ai/mcp" style="color:#2563eb;text-decoration:none;">Model Context Protocol (MCP) &mdash; SAP BTP AI Best Practices</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Reltio <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Bi-weekly release <strong>2026.1.7.0</strong> rolled out to Production tenants on July 31, 2026. Two new capabilities land in the AgentFlow Agent Builder: (1) <strong>Agent Blueprint</strong> &mdash; an AI-assisted feature that takes a natural-language description of an agent's purpose, users, use cases and constraints and generates an initial agent configuration, a system prompt, and a recommended set of MCP tools; (2) admins can now update all published agents in a tenant, regardless of original author. The same release notes formally register the <strong>Reltio Ontology Builder</strong> as an agentic web experience on reltio.com (no tenant, no credentials, no cost) that translates legacy source schemas into a Reltio-ready canonical model in minutes.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Reduces friction to author governed MCP-backed agents from &ldquo;days&rdquo; to &ldquo;minutes&rdquo; &mdash; a direct parity move against Profisee's Aisey and Akeneo's Agentic Ziggy, and a data point for how quickly MCP tool selection is being automated for non-developers.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://docs.reltio.com/en/reltio/whats-new-and-notable/whats-new-at-a-glance/release-notes-at-a-glance/2026.1-release-notes/2026.1-bi-weekly-release-notes-rn" style="color:#2563eb;text-decoration:none;">Reltio 2026.1 bi-weekly Release Notes &mdash; 2026.1.7.0 (July 31, 2026)</a></li>
+                          <li><a href="https://www.reltio.com/ontology-builder/" style="color:#2563eb;text-decoration:none;">Reltio Ontology Builder &mdash; product page</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Salsify <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Salsify kicked off a new three-part webinar series, <strong>&ldquo;AI in Salsify: A Practical Playbook for Agentic Commerce Readiness&rdquo;</strong>, with the first session on July 30, 2026 (foundational product-content requirements for AI agents; in-platform demo and customer story). Continuation sessions on AI-powered workflows and syndication to shopping bots follow in August&ndash;September. Companion whitepaper <strong>&ldquo;Mastering the Agentic Shelf: A PXM Playbook for AI-Fueled Growth&rdquo;</strong> is now published, and the co-authored Azoma / Digital Shelf Institute &ldquo;5 C's of Agentic Commerce&rdquo; framework is being positioned as the new industry standard. No new MCP capabilities announced.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> MCP-adjacent. Salsify is now running a sustained multi-month go-to-market cadence around &ldquo;agentic shelf&rdquo; readiness rather than a single launch splash &mdash; indicative of a shift from product marketing to category-shaping.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.salsify.com/resources/webinar/ai-in-salsify-a-practical-playbook-for-agentic-commerce-readiness" style="color:#2563eb;text-decoration:none;">AI in Salsify: A Practical Playbook for Agentic Commerce Readiness (webinar series)</a></li>
+                          <li><a href="https://www.salsify.com/resources/whitepaper/-agentic-shelf-pxm-playbook-ai-growth" style="color:#2563eb;text-decoration:none;">Mastering the Agentic Shelf: A PXM Playbook for AI-Fueled Growth (whitepaper)</a></li>
+                          <li><a href="https://www.salsify.com/blog/a-new-framework-the-5-cs-of-agentic-commerce-salsify" style="color:#2563eb;text-decoration:none;">A New Framework: The 5 C's of Agentic Commerce (Salsify blog)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Syndigo <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Novi (AI-visibility platform for ChatGPT / Gemini product discovery) announced a strategic integration with Syndigo on July 22, 2026, creating an automated pipeline that pushes Novi's AI-optimized product content directly into Syndigo's syndication engine for publication across Amazon, Walmart and Target &mdash; eliminating manual copy/paste while enforcing retailer-specific taxonomy and publishing guidelines. Positioned in third-party coverage as &ldquo;infrastructure for the agent-driven economy.&rdquo; No explicit MCP messaging; extends Syndigo's Synapse / Conversion Framework agentic PXM narrative.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> MCP-adjacent. Reinforces the emerging separation between &ldquo;content optimized so LLMs can <em>find</em> products&rdquo; (Novi) and &ldquo;the syndication substrate that carries governed product data to endpoints&rdquo; (Syndigo) &mdash; a useful frame for Stibo's own AI-ready product data messaging.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://martechseries.com/content/novi-launches-new-integration-to-flow-ai-optimized-product-content-directly-into-syndigo-helping-brands-accelerate-content-syndication/" style="color:#2563eb;text-decoration:none;">Novi Launches New Integration to Flow AI-Optimized Product Content Directly into Syndigo (MarTech Series, July 22, 2026)</a></li>
+                          <li><a href="https://cmofirst.com/marketing/novi-partners-with-syndigo-to-directly-flow-ai-optimized-product-content/" style="color:#2563eb;text-decoration:none;">Novi &amp; Syndigo Partner on AI Product Content (CMO First)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">3. Notable Patterns</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>MCP <code>2026-07-28</code> spec ships &mdash; vendor compatibility is now a competitive proof-point.</strong> With the biggest MCP revision since launch officially released and Tier-1 SDKs GA, the next 4&ndash;8 weeks will separate vendors who ship an explicit &ldquo;we support 2026-07-28&rdquo; statement from those who don't. Informatica's docs currently still reference <code>2025-06-18</code>.</li>
+                  <li style="margin-bottom:6px;"><strong>Natural-language agent authoring is becoming table stakes on top of MCP.</strong> Reltio's Agent Blueprint (recommends MCP tools from a plain-English brief) joins Profisee's Aisey re-architecture (Microsoft Agent Framework, ~10-minute environment configuration) and Akeneo's Agentic Ziggy &mdash; the value-add is shifting from &ldquo;we expose MCP&rdquo; to &ldquo;we generate the agent, its prompt and its tool selection for you.&rdquo;</li>
+                  <li style="margin-bottom:0;"><strong>The narrative is bifurcating:</strong> MDM/PIM vendors emphasize governed MCP tool-calling, while PXM/syndication vendors emphasize AI-readable content pipelines (Salsify, Novi&ndash;Syndigo). Both are MCP-adjacent, but they are converging on different halves of the agent stack &mdash; a useful lens for Stibo's dual MDM+PIM positioning.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">4. No Relevant Updates</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:4px;"><strong>Profisee</strong> &mdash; no new public news this week; 2026.R2 (July 8) with Aisey re-architected on Microsoft Agent Framework and expanded MCP surface remains current.</li>
+                  <li style="margin-bottom:4px;"><strong>Akeneo</strong> &mdash; no new public news this week; Summer 2026 &ldquo;Agentic Ziggy&rdquo; release (July 8) on top of the Akeneo MCP Server remains current (July 29 Deminar is a marketing event on already-announced capabilities).</li>
+                  <li style="margin-bottom:4px;"><strong>Inriver</strong> &mdash; no new public news this week; Summer 2026 release (June 30) with enhanced MCP endpoints, MCP Code Writer and the Enrich Assistant remains current.</li>
+                  <li style="margin-bottom:0;"><strong>Pimcore</strong> &mdash; no new public news this week; Platform 2026.2 GA (July 9) with continued expansion of the MCP-based Agent Bundle remains current (patch v2026.2.4 shipped July 21 is maintenance).</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">5. Suggested Follow-Up</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:6px;">Track which of the nine vendors is first to publish an explicit <strong>MCP <code>2026-07-28</code> compatibility statement</strong> (Informatica, Reltio, SAP, Profisee, Akeneo are the most likely candidates given prior MCP investment). Timing here is a leading indicator of platform seriousness.</li>
+                  <li style="margin-bottom:6px;">Consider whether Stibo Systems' agent-authoring story should now include a <strong>&ldquo;generate an agent from a natural-language brief&rdquo;</strong> analogue to Reltio Agent Blueprint / Profisee Aisey / Akeneo Agentic Ziggy &mdash; the &ldquo;just expose MCP&rdquo; bar is being raised to include MCP tool auto-recommendation.</li>
+                  <li style="margin-bottom:0;">Monitor SAP MDG-specific roadmap communications post-Q2 earnings; the AI Agent Hub / Joule Work / MCP Gateway commercial framing is now firmly in place at group level, but MDG-specific product signal remains thin and is a potential window for differentiated Stibo messaging.</li>
+                </ul>
+
+                <p style="margin:24px 0 0 0;color:#6b7280;font-size:12px;">Automated weekly MCP competitive intelligence digest. Sources are cited inline; classifications (New / Updated) are computed against the previous baseline.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
