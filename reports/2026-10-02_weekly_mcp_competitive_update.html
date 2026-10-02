@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weekly MCP Competitive Update – September 25, 2026 to October 2, 2026</title>
+  </head>
+  <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1f2937;line-height:1.5;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f4f5f7;">
+      <tr>
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="background:#0f172a;padding:20px 24px;color:#ffffff;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;">Weekly MCP Competitive Update</div>
+                <div style="font-size:18px;font-weight:600;margin-top:4px;">September 25, 2026 &mdash; October 2, 2026</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:24px;">
+                <p style="margin:0 0 16px 0;">Hi Mark,</p>
+                <p style="margin:0 0 16px 0;">Here is this week's concise MCP competitive intelligence update.</p>
+
+                <h2 style="margin:24px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">1. Executive Summary</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>SAP officially discontinues the SAP BTP-based SAP Master Data Governance, cloud edition</strong> (SAP Community blog, Sept 30). Future MDM footprint = SAP MDG on S/4HANA (central governance at source) + SAP Reltio (enterprise-wide unification) inside SAP Business Data Cloud &mdash; first time SAP publicly ends a cloud MDG SKU and formally cedes the non-SAP unification role to Reltio.</li>
+                  <li style="margin-bottom:6px;"><strong>Pimcore Platform Version 2026.3 GA (Sept 30)</strong> promotes <strong>Datahub Simple REST MCP support from beta to &ldquo;final,&rdquo;</strong> turns Pimcore into a <strong>native OAuth 2.0 server</strong> for external AI agents, and ships an <strong>embeddings-based semantic search / duplicate detection</strong> service. Agent Bundle beta adds <strong>headless Agent Tasks</strong> and Workflow Engine integration.</li>
+                  <li style="margin-bottom:6px;"><strong>Reltio 2026.1.11.0 PRD (Sept 25)</strong> ships <strong>four SAP-branded &ldquo;SAP Reltio Velocity Packs&rdquo;</strong> (SAP S/4HANA, Mill Products &amp; Mining, Retail, CPG) &mdash; first productised SAP-branded content packs since the acquisition &mdash; plus exportable AgentFlow job record reports with full conversation transcripts.</li>
+                  <li style="margin-bottom:6px;"><strong>Informatica's Dreamforce messaging kept amplifying</strong>: Sept 28 blog &ldquo;Powering your Enterprise AI with Informatica Plugin for Claude&rdquo; and a Sept 25 Computer Weekly piece pushing trust indicators on every Claude answer.</li>
+                  <li style="margin-bottom:0;">Cross-vendor: <strong>Nine weeks post-spec, still zero MCP 2026-07-28 compatibility statements</strong> across the tracked set. Pimcore's &ldquo;Datahub Simple REST MCP reaches final&rdquo; is the week's closest native-MCP GA event.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">2. Key Updates This Week</h2>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">SAP MDG <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> The Sept 30 SAP Community blog <em>&ldquo;The Evolution of SAP Master Data Governance with SAP Business Data Cloud&rdquo;</em> (Andreas Seifried, SAP) formally announces the <strong>discontinuation of the SAP BTP-based SAP Master Data Governance, cloud edition</strong>: existing subscriptions honoured through contract end, no renewals, free tier withdrawn, phased out of BTPEA/CPEA/PayGo. SAP positions <strong>SAP MDG (S/4HANA, central governance at source)</strong> and <strong>SAP Reltio (enterprise-wide unification across SAP + non-SAP)</strong> as the two complementary MDM components inside SAP Business Data Cloud. SAP S/4HANA Cloud Private Edition and Public Edition are the recommended MDG deployment targets.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> SAP has publicly ceded the non-SAP unification role to Reltio and simplified its MDM story to a two-SKU architecture &mdash; materially sharpens the competitive frame Stibo Systems faces inside SAP accounts, especially for cross-system / non-SAP master-data use cases.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/the-evolution-of-sap-master-data-governance-with-sap-business-data-cloud/ba-p/14492236" style="color:#2563eb;text-decoration:none;">The Evolution of SAP Master Data Governance with SAP Business Data Cloud (SAP Community, Sept 30, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Pimcore <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Pimcore Platform Version 2026.3 GA (Sept 30, 2026).</strong> Three MCP / agent-relevant items: (1) <strong>Datahub Simple REST MCP support reaches &ldquo;final&rdquo;</strong> (previously beta); (2) <strong>Pimcore evolves into a full OAuth 2.0 server built on existing Pimcore user accounts</strong> &mdash; standardised authentication for external AI agents, chat assistants and MCP integrations without a separate identity layer; (3) <strong>Pimcore Embeddings</strong> &mdash; a new vector-embeddings service for images and textual metadata enabling <strong>semantic search and duplicate / near-duplicate detection</strong> across assets and data objects via an adapter-based provider model. <strong>Pimcore Agent Bundle</strong> stays beta but now supports <strong>headless Agent Tasks</strong> and integrates with the Pimcore Workflow Engine. First post-Tenzing-majority-stake product release.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Final MCP + native OAuth 2.0 + headless agent tasks + embeddings-powered semantic search give Pimcore one of the most complete open-core PIM/MDM stacks for agent-ready, governed data access in the tracked set.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://pimcore.com/en/resources/blog/pimcore-platform-version-2026-3" style="color:#2563eb;text-decoration:none;">Pimcore Platform Version 2026.3: Faster Data Operations, Extensible Portals, and the Next Step Toward Intelligent PXM (Pimcore blog, Sept 30, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Reltio <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Reltio 2026.1.11.0 PRD Sept 25, 2026.</strong> First release post-SAP close to productise SAP-branded content: <strong>four new &ldquo;SAP Reltio Velocity Packs&rdquo;</strong> &mdash; <strong>SAP S/4HANA</strong> (business partners, materials, finance), <strong>Mill Products &amp; Mining</strong>, <strong>Retail</strong> (customers across channels, GS1 identifiers, SAP S/4HANA for Retail mappings), and <strong>Consumer Packaged Goods</strong> (GDSN publication, trade data). Each is a preconfigured data model with matching, survivorship and reference data so customers skip model build. AgentFlow-side: <strong>downloadable job record reports</strong> (CSV / JSONL) for automated long-running tasks, with optional per-record conversation transcript. Plus hierarchy integrity checks on entity merges and drag-and-drop node reorganisation. <strong>2026.2 Preview rolls Oct 16, GA Oct 23.</strong></p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Velocity Packs convert the &ldquo;Reltio, an SAP company&rdquo; message into shrink-wrapped SAP-branded accelerators by industry &mdash; raises the bar in SAP-heavy accounts and formalises the MDG-vs-Reltio split codified by SAP this same week.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/2026.1-release-notes/2026.1-bi-weekly-release-notes-rn" style="color:#2563eb;text-decoration:none;">Reltio 2026.1 bi-weekly Release Notes &mdash; 2026.1.11.0 (Sept 25, 2026)</a></li>
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/release-cadence-and-delivery-schedule" style="color:#2563eb;text-decoration:none;">Release cadence and delivery schedule (2026.2 GA Oct 23)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Informatica <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Two amplifications of the Dreamforce / Claude plugin story. (1) <strong>Sept 28 Informatica blog &ldquo;Powering your Enterprise AI with Informatica Plugin for Claude&rdquo;</strong> restates the plugin's architecture &mdash; reusable Catalog and Data Discovery Skill plus connectors to the <strong>Informatica Secure MCP Gateway</strong> fronting the <strong>Catalog Discovery MCP</strong> and <strong>CLAIRE Data Exploration Agent MCP</strong> &mdash; now listed on the Claude Plugin Marketplace, framed as the fix for the Knowledge, Trust and Action gaps. (2) <strong>Sept 25 Computer Weekly piece &ldquo;Informatica wants AI agents to stop making up the numbers&rdquo;</strong> (Pathak interview) emphasises <strong>trust indicators attached to every data point Claude returns</strong> &mdash; source, definitions, data quality, lineage.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Reinforces Informatica's &ldquo;proof-of-trust&rdquo; positioning on top of its Claude-plugin / MCP play &mdash; a narrative Stibo should watch when framing governed MDM as a trust layer for agents, not just a data pipe.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.informatica.com/blogs/powering-your-enterprise-ai-with-informatica-plugin-for-claude.html" style="color:#2563eb;text-decoration:none;">Powering your Enterprise AI with Informatica Plugin for Claude (Informatica blog, Sept 28, 2026)</a></li>
+                          <li><a href="https://www.computerweekly.com/news/366650974/Informatica-wants-AI-agents-to-stop-making-up-the-numbers" style="color:#2563eb;text-decoration:none;">Informatica wants AI agents to stop making up the numbers (Computer Weekly, Sept 25, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Akeneo <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Sept 30, 2026 primary-source press release</strong> &mdash; three leadership appointments: <strong>Carole Offredo (ex-Dataiku) as CMO</strong>, <strong>Jean Lethuillier as VP Customer Success</strong>, <strong>Edouard Dewulf as Senior Director Global Center of Excellence</strong>. Release explicitly ties the hires to US expansion and the <strong>next phase of agentic commerce</strong>, cites PricingHUB and Agentic Ziggy as the product foundation, and references top ranking in Info-Tech SoftwareReviews PIM Data Quadrant (July 2026) and Exemplary Vendor in ISG Buyers Guide 2026. MCP-adjacent (no new MCP capability).</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Signals Akeneo pivoting its go-to-market around enterprise AI buyers &mdash; a lift in the sales motion against which Stibo competes directly in product data for AI.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.akeneo.com/press-release/akeneo-continues-to-invest-in-the-future-of-commerce-with-strategic-leadership-appointments/" style="color:#2563eb;text-decoration:none;">Akeneo Continues to Invest in the Future of Commerce with Strategic Leadership Appointments (Akeneo press release, Sept 30, 2026)</a></li>
+                          <li><a href="https://retailtechinnovationhub.com/home/2026/10/1/focus-on-ai-as-product-experience-specialist-akeneo-announces-three-senior-executive-appointments" style="color:#2563eb;text-decoration:none;">Retail Technology Innovation Hub coverage (Oct 2, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Syndigo <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Sept 28 Syndigo blog &ldquo;AI Shopping, Tariffs &amp; the Holiday Retail Challenge&rdquo;</strong> (Tarun Chandrasekhar, President &amp; CPO) argues shoppers now ask AI first and never see a retailer's page if the product-data feed is stale &mdash; collapses tariff-driven supplier swaps and AI-assistant answers onto the same clock. <strong>Oct 1&ndash;2 at DAM New York / PIM/PXM NYC</strong>: Syndigo exhibiting Booth 38 and running an exclusive Oct 1 PIM / Digital Commerce Leaders dinner at TAO Uptown; <strong>Oct 2 PIM/PXM NYC session with Vinny Maurici</strong> &mdash; &ldquo;How PIM Gets Products Chosen Across AI, In-Store Experiences, and Online.&rdquo; MCP-adjacent.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> First US east-coast on-the-ground push into DAM / PIM leader audiences since GS1 Connect in June; keeps Syndigo in the &ldquo;AI needs well-governed PIM&rdquo; narrative without adding net new MCP capability.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://syndigo.com/blog/holiday-retail-ai-shopping-tariffs-product-data/" style="color:#2563eb;text-decoration:none;">AI Shopping, Tariffs &amp; the Holiday Retail Challenge (Syndigo blog, Sept 28, 2026)</a></li>
+                          <li><a href="https://syndigo.com/events/damnyc-pim-pxm-nyc-2026/" style="color:#2563eb;text-decoration:none;">Meet Syndigo at DAMNYC &amp; PIM/PXM NYC (Oct 1&ndash;2, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Salsify <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Sept 30, 2026 at 3 PM GMT</strong> Europe airing of <strong>&ldquo;AI in Salsify Part 3 &mdash; Powering Agentic Experiences&rdquo;</strong> &mdash; final session in the three-part agentic-commerce readiness series, focused on <strong>federating product data to AI agents and shopping bots</strong> so brands are understood and recommended at the moment of agent-driven purchase. No net new MCP capability disclosed on the webinar page; extends the MCP-adjacent positioning anchored on Salsify's first-party remote MCP server.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Closes Salsify's three-part agentic-commerce campaign; sets up the &ldquo;What's New at Salsify? Q3&rdquo; roadmap push expected later in October.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.salsify.com/resources/webinar/ai-in-salsify-a-practical-playbook-for-agentic-commerce-readiness-europe" style="color:#2563eb;text-decoration:none;">AI in Salsify Part 3 &mdash; Europe (Sept 30, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">3. Notable Patterns</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>SAP's two-SKU MDM story is now explicit:</strong> MDG at the SAP source + Reltio for cross-system unification, with the BTP-based MDG cloud edition retired &mdash; pairs cleanly with Reltio's new SAP-branded Velocity Packs the same week.</li>
+                  <li style="margin-bottom:6px;"><strong>&ldquo;Final&rdquo; / &ldquo;GA&rdquo; MCP milestones are appearing in product releases without any 2026-07-28 compatibility statement:</strong> Pimcore's Datahub Simple REST MCP reaching &ldquo;final&rdquo; is the second such GA event in a month (after SAP CAP MCP Adapter GA in September). Nine weeks post-spec, the tracked set still has zero explicit MCP 2026-07-28 compatibility statements.</li>
+                  <li style="margin-bottom:0;"><strong>Native OAuth 2.0 as the AI-agent authentication layer is now a competitive feature:</strong> Pimcore 2026.3 explicitly builds OAuth 2.0 server capability on top of existing user accounts for MCP and third-party AI agents, mirroring SAP Integration Suite MCP Gateway's OAuth 2.0 / OIDC posture &mdash; vendor-side consensus that identity is the real gating control for agent access to master data.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">4. No Relevant Updates</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>Profisee</strong> &mdash; only promotion of the virtual Data Hero Summit on Oct 8, 2026; no new product / MCP news this week.</li>
+                  <li style="margin-bottom:0;"><strong>Inriver</strong> &mdash; Sept 25 incremental community release notes cover import UX / mapping bugfixes only; no new MCP endpoints or agent capabilities.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">5. Suggested Follow-Up</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;">Monitor the SAP MDG discontinuation announcement for customer-communications fallout and watch whether SAP / Reltio publish a joint migration or &ldquo;legacy MDG BTP &rarr; Reltio&rdquo; play &mdash; the week's most consequential competitive signal.</li>
+                  <li style="margin-bottom:6px;">Review Pimcore 2026.3 (final MCP + native OAuth 2.0 server + embeddings) alongside Stibo's MCP messaging; consider whether Stibo should emphasise its own identity / governance story for agent access more explicitly.</li>
+                  <li style="margin-bottom:0;">Watch the Oct 16 Preview / Oct 23 GA of Reltio 2026.2 for a formal 26.2 announcement &mdash; likely the headline Reltio product milestone of Q4.</li>
+                </ul>
+
+                <p style="margin:28px 0 0 0;font-size:12px;color:#6b7280;">Prepared for Mark Janssen, Stibo Systems. Sources link to publicly available pages. No speculative content included. &ldquo;MCP-adjacent&rdquo; is used where sources discuss AI agents, semantic layers or AI-ready data access without explicitly naming MCP.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
