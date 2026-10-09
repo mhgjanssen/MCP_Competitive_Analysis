@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weekly MCP Competitive Update – October 2, 2026 to October 9, 2026</title>
+  </head>
+  <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1f2937;line-height:1.5;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f4f5f7;">
+      <tr>
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="background:#0f172a;padding:20px 24px;color:#ffffff;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;">Weekly MCP Competitive Update</div>
+                <div style="font-size:18px;font-weight:600;margin-top:4px;">October 2, 2026 &mdash; October 9, 2026</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:24px;">
+                <p style="margin:0 0 16px 0;">Hi Mark,</p>
+                <p style="margin:0 0 16px 0;">Here is this week's concise MCP competitive intelligence update.</p>
+
+                <h2 style="margin:24px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">1. Executive Summary</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>SAP AI Agent Hub reached GA on Oct 1, 2026</strong> (confirmed by Oct 8 SAP News Center piece). It is a vendor-agnostic command center for the discovery and governance of <strong>AI agents, LLMs, and MCP servers across SAP and non-SAP environments</strong> &mdash; <strong>only verified MCP servers can be called in production</strong> &mdash; and now gates SAP's broader autonomous-enterprise narrative. New <strong>SAP Signavio Agent Mining</strong> measures per-agent outcomes.</li>
+                  <li style="margin-bottom:6px;"><strong>Reltio 2026.1.12.0 (PRD Oct 9)</strong> ships the <strong>5th SAP-branded &ldquo;SAP Reltio Velocity Pack&rdquo; &mdash; Banking</strong> (standalone retail + commercial banking, distinct from Reltio for Financial Services), plus materialized-hierarchy structural validation and merge/unmerge connection preservation.</li>
+                  <li style="margin-bottom:6px;"><strong>Profisee Anywhere (Sept 30 at FabCon Europe)</strong> &mdash; Profisee's SaaS MDM now runs <strong>natively inside Microsoft Fabric OneLake</strong> (GA Dec 2026), with a new <strong>Fabric SQL Database Connector</strong> shipping in the 26R3 release this week. Profisee claims the only MDM platform where data is stewarded natively inside Fabric without leaving OneLake.</li>
+                  <li style="margin-bottom:6px;"><strong>Pimcore Platform Version 2026.3.1 (Oct 6)</strong> &mdash; security-focused bugfix on top of 2026.3; <strong>Oct 6 post-DMEXCO panel &ldquo;AI Agents in Data &amp; Experience Management: Hype, Help, or Game Changer?&rdquo;</strong> delivered by Dietmar Rietsch with seven implementation partners.</li>
+                  <li style="margin-bottom:0;"><strong>Inriver Oct 7 resource</strong> publishes a four-measure <strong>AI content-control framework</strong> (limit AI scope, decision owner, verification against trusted data, approval log), citing McKinsey's 2026 AI trust survey &mdash; MCP-adjacent agent-governance messaging.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">2. Key Updates This Week</h2>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">SAP MDG <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>SAP AI Agent Hub reached general availability Oct 1, 2026</strong> (SAP News Center, Oct 8). Vendor-agnostic command center that automatically discovers and inventories <strong>AI agents, LLMs, and MCP servers across SAP, Microsoft, Google, AWS, Databricks and ServiceNow</strong>, with evaluation + verification workflows and runtime enforcement &mdash; <strong>only verified MCP servers can be called in production</strong>, and access is automatically revoked when verification status changes. New <strong>SAP Signavio Agent Mining</strong> measures per-agent outcomes. Supporting SAP Community blogs the same week: <em>&ldquo;The MDM Renaissance: What AI-Native, Autonomous Master Data Looks Like in SAP BDC&rdquo;</em> (Sept 25) and <em>&ldquo;SAP Reltio in the SAP Business AI Platform Architecture&rdquo;</em> (Oct 7). SAP MDG is being integrated into SAP BDC via Unified Customer Layer with full data-product exposure by end of year.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Explicit SAP policy that production AI agents can only use <em>verified</em> MCP servers &mdash; the first large-vendor runtime gate on MCP in the tracked set &mdash; reframes &ldquo;MCP support&rdquo; as a governance and identity question and raises the bar competitors must meet.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://news.sap.com/2026/10/joule-work-sap-business-ai-platform-power-next-generation-business-ai/" style="color:#2563eb;text-decoration:none;">How Joule Work and SAP Business AI Platform Are Powering the Next Generation of Business AI (SAP News Center, Oct 8, 2026)</a></li>
+                          <li><a href="https://www.sap.com/products/artificial-intelligence/ai-agent-hub.html" style="color:#2563eb;text-decoration:none;">SAP AI Agent Hub product page</a></li>
+                          <li><a href="https://architecture.learning.sap.com/docs/ref-arch/98efa0" style="color:#2563eb;text-decoration:none;">Agentic AI &amp; AI Agents on SAP Business AI Platform (SAP Architecture Center)</a></li>
+                          <li><a href="https://community.sap.com/t5/data-and-ai-professionals-blog-posts/what-ai-native-autonomous-master-data-looks-like-in-sap-business-data-cloud/ba-p/14490833" style="color:#2563eb;text-decoration:none;">The MDM Renaissance: What AI-Native, Autonomous Master Data Looks Like in SAP BDC (SAP Community, Sept 25, 2026)</a></li>
+                          <li><a href="https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-reltio-in-the-sap-business-ai-platform-architecture/ba-p/14498303" style="color:#2563eb;text-decoration:none;">SAP Reltio in the SAP Business AI Platform Architecture (SAP Community, Oct 7, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Reltio <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Reltio 2026.1.12.0 PRD Oct 9, 2026</strong> introduces the <strong>5th SAP-branded &ldquo;SAP Reltio Velocity Pack&rdquo; &mdash; Banking</strong>, a standalone retail + commercial banking pack with banking product catalog, deposit/card/loan account types, bankers/branches/signers roles, due diligence, verification, risk and screening, and household + ownership-and-control structures. Explicitly positioned as <em>different from</em> Reltio for Financial Services (wealth / advisory model). Promised time-to-value: 90 days. The release also adds <strong>structural validation for materialized hierarchies</strong> via APIs and <strong>preserves hierarchy connections through merge/unmerge</strong> using stored crosswalks. <strong>2026.2 Preview Oct 16, GA Oct 23.</strong></p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Confirms the four SAP-branded Velocity Packs from Sept 25 were not a one-off &mdash; SAP-Reltio productised content for vertical SAP accounts is now a sustained biweekly release pattern. Banking is the first standalone industry pack outside Financial Services and signals Reltio widening the SAP channel beyond its historical FS footprint.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/2026.1-release-notes/2026.1-bi-weekly-release-notes-rn" style="color:#2563eb;text-decoration:none;">Reltio 2026.1 bi-weekly Release Notes &mdash; 2026.1.12.0 (Oct 9, 2026)</a></li>
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/release-cadence-and-delivery-schedule" style="color:#2563eb;text-decoration:none;">Release cadence and delivery schedule (2026.2 GA Oct 23)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Profisee <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Sept 30, 2026 press release at Microsoft Fabric Community Conference Europe (Barcelona)</strong>: <strong>Profisee Anywhere</strong> allows organisations to use Profisee's SaaS MDM to steward master data <strong>natively inside Microsoft Fabric OneLake</strong> &mdash; Profisee claims it is the only MDM platform where data is created, managed and governed over time without ever leaving Fabric OneLake. Paired with the existing certified Microsoft Fabric workload. Also announced: <strong>Fabric SQL Database Connector</strong> &mdash; ingest from Fabric SQL databases and publish mastered data back &mdash; <strong>launching with the 26R3 release of the Profisee Platform the week of the conference</strong>. <strong>Profisee Anywhere GA December 2026.</strong> Profisee delivered the free <strong>virtual Data Hero Summit on Oct 8, 2026</strong> (CDO Malcolm Hawker keynote: &ldquo;trust = meaning + truth; MDM gets truth into the machine&rdquo;).</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Profisee doubles down on the Microsoft stack as its primary AI distribution surface &mdash; &ldquo;data never leaves Fabric&rdquo; directly addresses governance concerns around moving data for AI/MDM and extends the Profisee MCP Server pattern of serving governed truth to any Microsoft Copilot / Claude / ChatGPT agent, now with Fabric-native storage.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://profisee.com/press-release/profisee-introduces-profisee-anywhere-letting-organizations-manage-data-directly-in-microsoft-fabric-onelake/" style="color:#2563eb;text-decoration:none;">Profisee Introduces Profisee Anywhere, Letting Organizations Manage Data Directly in Microsoft Fabric OneLake (Press release, Sept 30, 2026)</a></li>
+                          <li><a href="https://profisee.com/data-hero-summit/" style="color:#2563eb;text-decoration:none;">2026 Data Hero Summit (Oct 8, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Pimcore <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Pimcore Platform Version 2026.3.1 GitHub release on Oct 6, 2026</strong> &mdash; maintenance release on top of 2026.3 with four security fixes (PDF scanner payload inspection, SQL validator desync in Custom Reports, document view permission on unpublished/preview access, generated model class description sanitisation), a per-element-type version storage feature, storage-queue retry handling, focal-point cover-transformation fix and an asset-upload version-skip option. <strong>No new Agent Bundle, Datahub MCP or Pimcore Agent SDK changes.</strong> Pimcore also delivered the <strong>Oct 6 online panel &ldquo;AI Agents in Data &amp; Experience Management: Hype, Help, or Game Changer?&rdquo;</strong> hosted by Dietmar Rietsch with Arrabiata, Divante (Cloudflight), elbkapit&auml;ne, NETFORMIC, NSPYR, Strix and swoox.io &mdash; framed as separating hype from reality for AI agents in PIM / MDM / DAM / DXP / CDP / commerce.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Shows Pimcore's post-Tenzing cadence delivering security and operability on top of the 2026.3 MCP-final + native OAuth 2.0 server release the previous week; the partner panel is Pimcore's first collective implementation-partner message about agentic PIM/MDM under the new ownership.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://github.com/pimcore/pimcore/releases" style="color:#2563eb;text-decoration:none;">Pimcore v2026.3.1 (GitHub release, Oct 6, 2026)</a></li>
+                          <li><a href="https://pimcore.com/ai-agents-hype-help-game-changer" style="color:#2563eb;text-decoration:none;">AI Agents in Data &amp; Experience Management: Hype, Help, or Game Changer? (Oct 6, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Inriver <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Oct 7, 2026 resource &ldquo;How to solve your AI content control problem once and for all&rdquo;</strong> publishes a four-measure framework for governing AI-generated product content: (1) limit what the AI can change, (2) assign a decision owner, (3) add a verification step against trusted data, (4) keep an approval log before publication. Cites the McKinsey 2026 AI trust survey (~500 orgs &mdash; &ldquo;nearly two-thirds cite security and risk concerns as the top barrier to fully scaling agentic AI&rdquo;). Positions Inriver's agentic orchestration + verification/validation layer as the platform substrate: AI agent and LLM workflows run across content, e-commerce, data and product-development, with every product-data-based agentic workflow checked against trusted PIM data before output reaches a channel. MCP-adjacent &mdash; speaks to AI governance for product data without naming a specific protocol.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Extends Inriver's protocol-stack framing (ACP / UCP / MCP) with an operational control-plane message: PIM is where the verification layer lives. Direct competitive pressure on Stibo's own agent-governance narrative; Inriver is now first in the tracked set to publish a prescriptive AI-content-control checklist tied to a credible third-party survey.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.inriver.com/resources/ai-content-control-problem/" style="color:#2563eb;text-decoration:none;">How to solve your AI content control problem once and for all (Inriver resource, Oct 7, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">3. Notable Patterns</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>&ldquo;Verified MCP servers only&rdquo; becomes an explicit SAP policy.</strong> SAP AI Agent Hub GA (Oct 1) restricts production invocation to MCP servers that pass a formal verification workflow and automatically revokes access when verification status changes. First large-vendor runtime gate on MCP in the tracked set &mdash; reframes &ldquo;MCP support&rdquo; as a governance and identity question. Pimcore's 2026.3 native OAuth 2.0 server and Informatica's Secure MCP Gateway are the vendor-side analogues.</li>
+                  <li style="margin-bottom:6px;"><strong>SAP's two-SKU MDM story continues to productise.</strong> Reltio 2026.1.12.0 adds the 5th SAP-branded Velocity Pack (Banking) one week after the first four. The &ldquo;SAP MDG at source + SAP Reltio for enterprise unification&rdquo; architecture codified Sept 30 is now backed by weekly content releases, not just positioning.</li>
+                  <li style="margin-bottom:0;"><strong>Fabric OneLake is becoming a competitive battleground for governed MDM.</strong> Profisee Anywhere joins Reltio (Databricks Zero-Copy), Pimcore Embeddings, SAP Reltio (SAP BDC) and Informatica (Headless Data Management across every major cloud) in a cross-vendor race to put MDM/PIM state <em>inside</em> the customer's primary analytics / AI data store rather than beside it &mdash; governance posture matters because the data no longer moves.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">4. No Relevant Updates</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>Informatica</strong> &mdash; Sept 28 blog &ldquo;Powering your Enterprise AI with Informatica Plugin for Claude&rdquo; and Sept 25 Computer Weekly interview remain the latest primary content. MCP docs still cite protocol 2025-06-18 (ten weeks post-spec).</li>
+                  <li style="margin-bottom:6px;"><strong>Akeneo</strong> &mdash; No new primary-source press release this week; Sept 30 leadership appointments remain the latest. Follow-on Retail Technology Innovation Hub coverage (Oct 1-2) already captured last week.</li>
+                  <li style="margin-bottom:6px;"><strong>Salsify</strong> &mdash; No new primary content; &ldquo;AI in Salsify Part 3 &mdash; Powering Agentic Experiences&rdquo; US airing is Oct 27. &ldquo;What's New at Salsify? Q3 2026&rdquo; webinar page is live but not yet dated for the Oct 2-9 window.</li>
+                  <li style="margin-bottom:0;"><strong>Syndigo</strong> &mdash; Oct 1-2 DAM New York / PIM/PXM NYC Booth 38 + Vinny Maurici session delivered Oct 2; already covered in last week's report. No net new product news.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">5. Suggested Follow-Up</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;">Monitor whether SAP AI Agent Hub's &ldquo;verified MCP servers only&rdquo; rule becomes a buyer requirement in SAP accounts. If it propagates, every tracked vendor's MCP server will need an SAP verification workflow entry &mdash; a potential moat for SAP-aligned vendors (SAP MDG, SAP Reltio) and a question Stibo should pre-empt.</li>
+                  <li style="margin-bottom:6px;">Watch Reltio 2026.2 Preview (Oct 16) and GA (Oct 23). With five SAP-branded Velocity Packs in six weeks, the headline 2026.2 release is likely where the full SAP-Reltio content portfolio consolidates &mdash; the key Reltio product milestone of Q4.</li>
+                  <li style="margin-bottom:0;">Review Profisee Anywhere against Stibo's own Fabric / Databricks / Snowflake story. &ldquo;MDM native inside the customer's primary data store&rdquo; is becoming table stakes; consider whether Stibo's MCP messaging should emphasise <em>where governed data lives</em> as explicitly as it emphasises <em>how agents access it</em>.</li>
+                </ul>
+
+                <p style="margin:28px 0 0 0;font-size:12px;color:#6b7280;">Prepared for Mark Janssen, Stibo Systems. Sources link to publicly available pages. No speculative content included. &ldquo;MCP-adjacent&rdquo; is used where sources discuss AI agents, semantic layers or AI-ready data access without explicitly naming MCP.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
