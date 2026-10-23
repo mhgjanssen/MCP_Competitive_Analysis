@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weekly MCP Competitive Update – October 16, 2026 to October 23, 2026</title>
+  </head>
+  <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1f2937;line-height:1.5;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f4f5f7;">
+      <tr>
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="background:#0f172a;padding:20px 24px;color:#ffffff;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;">Weekly MCP Competitive Update</div>
+                <div style="font-size:18px;font-weight:600;margin-top:4px;">October 16, 2026 &mdash; October 23, 2026</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:24px;">
+                <p style="margin:0 0 16px 0;">Hi Mark,</p>
+                <p style="margin:0 0 16px 0;">Here is this week's concise MCP competitive intelligence update.</p>
+
+                <h2 style="margin:24px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">1. Executive Summary</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>Reltio 2026.2 reaches General Availability today (Oct 23).</strong> The release <strong>renames Reltio AgentFlow to &ldquo;Autonomous agents&rdquo;</strong> across the product, ships <strong>Long Running Tasks</strong> (background jobs on large record sets, isolated per-tenant runtime) and <strong>Unstructured search</strong> (document knowledge bases that ground custom agents) as GA, and documents Autonomous agents as built on the Reltio MCP Server. Capability rename matrix: AgentFlow Unstructured &rarr; Unstructured augmentation, Agent Builder &rarr; Custom agents, Agent Marketplace &rarr; Discover agents.</li>
+                  <li style="margin-bottom:6px;"><strong>Pimcore finally positioned on the Oct 12 Gartner PIM MQ: Visionary</strong> (Oct 19 blog by CEO Dietmar Rietsch). Pimcore is now across <strong>three</strong> Gartner MQs &mdash; DXP, MDM and PIM &mdash; with an explicit &ldquo;AI needs clean, governed data&rdquo; message framed around the Data Spine. This also <strong>corrects an inference in last week's report</strong>: per the Gartner MQ document and independent analysis, <strong>Salsify is the only Challenger</strong> in the 2026 PIM MQ. Confirmed 2026 PIM MQ Leaders among the tracked set: <strong>Akeneo, Inriver, Salesforce (Informatica), Stibo Systems, Syndigo</strong>.</li>
+                  <li style="margin-bottom:6px;"><strong>SAP scales partner agents into the AI Agent Hub ahead of TechEd Berlin (Oct 27&ndash;29).</strong> Oct 19 SAP News Center: a <strong>1,000-partner-agent target for TechEd</strong>, 300+ partner agents forecast on SAP Discovery Center by year-end; SAP AI Agent Hub is <strong>free for customers managing up to 500 AI agents</strong> and now hosts partner agents on equal footing with SAP's own. TechEd agenda confirms new hands-on MCP sessions (IN202 MCP Gateway, IN261 lab, AD161/AD262 CAP-based MCP servers, BT160/BT161 LeanIX MCP governance).</li>
+                  <li style="margin-bottom:6px;"><strong>Inriver's October product release ships agentic translation review + AI image adaptation</strong>, with its MCP Server (Query Manager) also extended Oct 10&ndash;11 for <strong>recursive entity retrieval across channel-node descendants and snapshot-version data access</strong>. Framed explicitly as validation of the Oct 12 PIM MQ Leader placement.</li>
+                  <li style="margin-bottom:0;"><strong>Informatica's Oct 2026 MDM release documents MCP-based stewardship inside Slack</strong>, plus two new PXM Agent skills (classify-and-enrich products; update product records by chatting with an AI agent) and golden-record publishing into Databricks. Oct 20 Data 360 + MDM Tech Tuesday delivered; Oct 27 Customer Identification MCP Server for MDM SaaS is next.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">2. Key Updates This Week</h2>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Reltio <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Reltio 2026.2 reaches GA on Oct 23, 2026 (per the official release-cadence page). The marquee change: <strong>Reltio AgentFlow is renamed &ldquo;Autonomous agents&rdquo;</strong>, with capability-level renames (AgentFlow Unstructured &rarr; Unstructured augmentation, Agent Builder &rarr; Custom agents, Agent Marketplace &rarr; Discover agents). <strong>Long Running Tasks</strong> (GA) let autonomous and custom agents work through large record sets in the background on an isolated per-tenant runtime, with per-record status, confidence score, reason, trace and CSV/JSONL export. <strong>Unstructured search</strong> (GA, part of Unstructured augmentation) turns documents into AI-searchable knowledge bases, grounding custom-agent answers in enterprise content. Reltio's Autonomous agents overview docs explicitly state the capability is <em>&ldquo;built on the Model Context Protocol (MCP) server,&rdquo;</em> enforcing RBAC, data masking and audit policies. The <strong>Oct 19 Gartner IT Symposium session with Pfizer</strong> (Nishith Trivedi, Enterprise Data Governance / Global MDM Lead) was delivered: Pfizer projects an <strong>80&ndash;90% cut in due-diligence time and a 30&ndash;40% cut in stewardship backlog</strong> from the agentic AI + MDM approach.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> The rename from &ldquo;AgentFlow&rdquo; to &ldquo;Autonomous agents&rdquo; normalises Reltio's naming with the SAP + enterprise category (SAP AI Agent Hub, Autonomous Suite) and positions &ldquo;autonomous master data governance&rdquo; as a shipping product category, not a slide. The MCP Server is still the plumbing, now with explicit customer-grade benchmarks via Pfizer.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/2026.2-release-notes/2026.2-major-release-notes" style="color:#2563eb;text-decoration:none;">Reltio 2026.2 Major Release Notes (Reltio Docs)</a></li>
+                          <li><a href="https://docs.reltio.com/en/products/autonomous-agents/autonomous-agents-overview" style="color:#2563eb;text-decoration:none;">Autonomous agents overview &mdash; &ldquo;Built on the Model Context Protocol (MCP) server&rdquo; (Reltio Docs)</a></li>
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/release-cadence-and-delivery-schedule" style="color:#2563eb;text-decoration:none;">Release cadence &mdash; 2026.2 GA Oct 23, 2026 (Reltio Docs)</a></li>
+                          <li><a href="https://www.gartner.com/en/conferences/na/symposium-us/sessions/detail/6187712-Scaling-Agentic-AI-at-Pfizer-Key-Lessons-in-Trust-Governance-and-Innovation" style="color:#2563eb;text-decoration:none;">Scaling Agentic AI at Pfizer &mdash; Gartner IT Symposium session (Oct 19, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Pimcore <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Oct 19, 2026 &mdash; Pimcore blog &ldquo;We bring together what belongs together. Pimcore recognized in the 2026 Gartner&reg; Magic Quadrant&trade; for PIM&rdquo;</strong> by CEO/co-founder Dietmar Rietsch finally takes a position on the Oct 12 Gartner PIM MQ: <strong>Pimcore is placed as a Visionary</strong>, alongside Bluestone PIM and Viamedici. The blog uses the recognition to make an explicit agent-governance argument: <em>&ldquo;An agent that enriches product content, answers a buyer, or updates a catalogue does not care how impressive your model is. It cares whether the data it touches is correct, complete, and governed. &hellip; Data management is no longer plumbing. It is the infrastructure that lets agents work.&rdquo;</em> Pimcore also launches a dedicated <code>/gartner-mq-2026-pim</code> landing page, noting the company now appears in <strong>three Gartner MQs &mdash; DXP, MDM and PIM</strong> &mdash; all on one platform. Separately, <strong>Pimcore v2026.3.3 shipped Oct 20</strong> (bugfixes + two security fixes: GHSA-6r57-mhj4-5gmr Custom Reports SQL validator LOAD_FILE bypass; GHSA-8xfm-m7j7-4mr5 PHP Object Injection via <code>tmp_store</code> session data) and <strong>v2026.3.3.1 Oct 22</strong> (Twig sandbox restriction). No new Agent Bundle / Datahub MCP changes.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Corrects an inference in last week's report (which implied Pimcore and Salsify were among six Leaders): per the Gartner document, the tracked-set Leaders are <strong>Akeneo, Inriver, Salesforce (Informatica), Stibo Systems, Syndigo</strong>, with <strong>Salsify the only Challenger</strong> and <strong>Pimcore a Visionary</strong>. Pimcore's agent-governance framing is sharper than most of the Leader cohort's quadrant announcements and worth watching.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://pimcore.com/en/resources/blog/we-bring-together-what-belongs-together.-now-recognised-in-three-gartner-magic-quadrants" style="color:#2563eb;text-decoration:none;">Pimcore blog &mdash; &ldquo;We bring together what belongs together&rdquo; (Dietmar Rietsch, Oct 19, 2026)</a></li>
+                          <li><a href="https://pimcore.com/gartner-mq-2026-pim" style="color:#2563eb;text-decoration:none;">Pimcore MQ landing page &mdash; &ldquo;Recognized in the 2026 Gartner&reg; Magic Quadrant&trade; for PIM&rdquo;</a></li>
+                          <li><a href="https://github.com/pimcore/pimcore/releases" style="color:#2563eb;text-decoration:none;">Pimcore v2026.3.3 / v2026.3.3.1 releases (GitHub, Oct 20 / Oct 22, 2026)</a></li>
+                          <li><a href="https://www.gartner.com/en/documents/8496777" style="color:#2563eb;text-decoration:none;">Gartner Magic Quadrant for Product Information Management Solutions (Oct 12, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">SAP MDG <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Oct 19, 2026 SAP News Center &mdash; &ldquo;1k AI Agents by SAP TechEd: Accelerating with Partners&rdquo;</strong> (Andrea Diederichs): partners delivered 680+ agents by Sapphire (vs. a 200-agent target); SAP has now set a <strong>1,000-partner-agent target for SAP TechEd Berlin (Oct 27&ndash;29)</strong> and forecasts 300+ partner agents on SAP Discovery Center by year-end. <strong>Partner agents are embedded directly in the SAP AI Agent Hub</strong> on equal footing with SAP-native agents. SAP AI Agent Hub is <strong>free of charge for customers managing up to 500 AI agents</strong>. The TechEd Berlin program confirms new hands-on MCP sessions: <strong>IN202 &ldquo;Model Context Protocol (MCP) Unlocked: Enable governed access to AI agents,&rdquo; IN261 MCP Gateway hands-on lab, AD161 &ldquo;Agentic CAP: Build MCP servers and enterprise AI agents,&rdquo; AD262 CAP-based MCP + A2A, BT160/BT161 LeanIX MCP governance workshops</strong> (with Claude Code connected via the LeanIX MCP server).</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> SAP is now shipping the economic layer (free Agent Hub up to 500 agents, &euro;100M partner fund) and the discovery/marketplace layer (partner agents in a single Hub) on top of the Oct 1 governance GA. For MDG, this is the direct distribution path to buyers already shortlisting around &ldquo;verified MCP servers only.&rdquo;</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://news.sap.com/2026/10/1k-ai-agents-by-sap-teched-sap-and-partners-accelerate-together/" style="color:#2563eb;text-decoration:none;">SAP News Center &mdash; 1k AI Agents by SAP TechEd (Oct 19, 2026)</a></li>
+                          <li><a href="https://www.masteringsap.events/collaborate-sap-teched-on-tour/session/4546684/in261-model-context-protocol-mcp-unlocked-enabling-governed-access-to-agents" style="color:#2563eb;text-decoration:none;">SAP TechEd &mdash; IN261 Model Context Protocol (MCP) Unlocked (hands-on lab)</a></li>
+                          <li><a href="https://community.sap.com/t5/sap-teched-blog-posts/sap-teched-berlin-bt161-bt160-two-workshops-one-goal-put-ai-under-control/ba-p/14501636" style="color:#2563eb;text-decoration:none;">SAP TechEd Berlin BT160 + BT161 &mdash; LeanIX MCP governance workshops (SAP Community)</a></li>
+                          <li><a href="https://www.sap.com/events/teched/berlin/tracks.html" style="color:#2563eb;text-decoration:none;">SAP TechEd Berlin tracks (Oct 27&ndash;29, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Inriver <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Oct 20, 2026 &mdash; &ldquo;October 2026 Product Release: AI-adapted images, agentic review of translations, and improved performance for even the largest data sets&rdquo;</strong> (Beccy Johnston, Inriver Community). Headline features: (a) <strong>AI image adaptation</strong> per market/channel &mdash; natural-language prompts, up to three reference images, in-PIM edit history, usage billed from the existing AI credits balance for Inspire licensees; (b) <strong>agentic critique loop for translations</strong> on OpenAI's latest model; (c) performance improvements for large data sets (richer completeness rules, Table View language selector); (d) print &amp; publish document-status insights; (e) Shopify adapter configuration UI. Inriver frames the release as validation of its <strong>Oct 12 Gartner PIM MQ Leader</strong> placement. Separately, <strong>Oct 10&ndash;11 community release notes</strong> extended the Inriver <strong>MCP Server (Query Manager)</strong>: recursive retrieval of all entities of a specified type from a channel node and its descendants (channel-content validation, business-unit exports, missing-product identification, reporting integration) and <strong>snapshot-version data access</strong> via the <code>get_entity_data</code> tool (new snapshot-tag argument).</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> The agentic translation critique loop and the AI image adaptation move Inriver's Inspire AI agent fabric into the &ldquo;work-doing agent&rdquo; bracket populated by Reltio Autonomous agents and Profisee Aisey. The MCP Query Manager extensions are the first MCP-level product change from Inriver since the September 2025 launch.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://community.inriver.com/hc/en-us/articles/31147870813980-October-2026-Product-Release-AI-adapted-images-agentic-review-of-translations-and-improved-performance-for-even-the-largest-data-sets" style="color:#2563eb;text-decoration:none;">Inriver &mdash; October 2026 Product Release (Oct 20, 2026, Inriver community)</a></li>
+                          <li><a href="https://community.inriver.com/hc/en-us/articles/30973041531292-Release-notes-Oct-10th-Oct-11th-2026" style="color:#2563eb;text-decoration:none;">Inriver &mdash; Release notes: Oct 10th&ndash;Oct 11th, 2026 (MCP Server / Query Manager updates)</a></li>
+                          <li><a href="https://community.inriver.com/hc/en-us/articles/31095949479580-Release-notes-October-20th-2026-Brand-Store" style="color:#2563eb;text-decoration:none;">Inriver Brand Store release notes (Oct 20, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Informatica <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Oct 20, 2026 Tech Tuesday &ldquo;From Golden Record to Agentic Action: Unlocking Data 360 with Trusted Context &mdash; MDM&rdquo;</strong> (Kamal Abrol, Senior Success Architect) was delivered and is now on-demand on the Informatica Success Portal. The session positions <strong>Informatica MDM + Salesforce Data 360 as the &ldquo;Stop AI hallucinations&rdquo; story</strong>: publishing MDM golden records into Data 360 via the Ingestion API, identity-resolution reuse from Customer 360 SaaS match outcomes, and AI-driven personalisation grounded in trusted master data. <strong>The Oct 2026 Informatica MDM release deck</strong> documents several AI-agent capabilities that overlap directly with the MCP story: <strong>&ldquo;Steward data through AI agents in tools like Slack&rdquo;</strong> (MCP servers let agents read metadata, search trusted data, write back, monitor jobs and anomalies, with validation + rollback &mdash; preview Nov 2026), <strong>&ldquo;Update product records by chatting with an AI agent&rdquo;</strong> (PXM Agent in CoPilot extracts data from English PDFs, plan preview before execution), and <strong>&ldquo;Classify and enrich products with an AI agent&rdquo;</strong> (two new PXM Agent skills, auto-classify or confidence-recommended against UNSPSC / GPC / NAICS / custom hierarchies). Also newly published: <strong>&ldquo;Publish trusted master data into Databricks.&rdquo;</strong> Next: <strong>Oct 27 Tech Tuesday</strong> on the <strong>Customer Identification MCP Server for MDM SaaS</strong>.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Informatica is now explicitly productising MCP into day-to-day MDM stewardship surfaces (Slack, chat-driven product updates) &mdash; not just agent-platform tooling. The Oct 2026 release deck confirms a Nov preview for MCP-based stewardship.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://success.informatica.com/explore/tt-webinars/from-golden-record-to-agentic-action--unlocking-data-360-with-tr.html" style="color:#2563eb;text-decoration:none;">Tech Tuesdays &mdash; &ldquo;From Golden Record to Agentic Action&rdquo; (Oct 20, 2026)</a></li>
+                          <li><a href="https://success.informatica.com/content/dam/informatica-cxp/techtuesdays-slides-pdf/Informatica%20MDM%20October%202026%20Release%20Highlights.pdf" style="color:#2563eb;text-decoration:none;">Informatica MDM October 2026 Release Highlights (Tech Tuesday slides, PDF)</a></li>
+                          <li><a href="https://success.informatica.com/explore/tt-webinars/bridging-ai-assistants-with-verified-master-records--exploring-t.html" style="color:#2563eb;text-decoration:none;">Tech Tuesdays &mdash; Customer Identification MCP Server for MDM SaaS (Oct 27, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Akeneo <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Oct 20, 2026 Unite.AI op-ed by Akeneo CTO Benoit Jacquemont &mdash; &ldquo;Scaling AI Shouldn't Mean Rebuilding Data Foundations Every Time&rdquo;</strong> reframes Akeneo's PIM MQ Leader messaging around AI-infrastructure reuse, with primary-source Akeneo survey data: <strong>93% of IT decision-makers report productivity gains from AI; 36% spend &gt;50% of total AI-project effort on data preparation; 53% spend 26&ndash;50%</strong>. Argues the next-gen opportunity is making data-prep work reusable across deployments. Akeneo also published the <strong>Italian localisation</strong> of the Oct 15 Leader announcement (Agentic Ziggy and the &ldquo;tectake 200 automation rules in minutes&rdquo; example). <strong>DwyerOmega &times; Akeneo MCP Part 1</strong> was amplified Oct 19 by Alexandra Coman and Akeneo's own LinkedIn (&ldquo;MCP removes the borders between systems&rdquo;); <strong>Part 2 explicitly promised</strong> by the Oct 14 blog but not yet published.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> The CTO's Unite.AI op-ed is the first serious attempt by a tracked vendor to put empirical numbers on &ldquo;data prep is the AI bottleneck,&rdquo; which is exactly the opening for MCP + governed data arguments. Combined with the DwyerOmega production case, Akeneo is building a two-sided &mdash; vendor evidence and customer evidence &mdash; MCP story faster than the rest of the Leader cohort.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.unite.ai/making-enterprise-ai-infrastructure-reusable/" style="color:#2563eb;text-decoration:none;">Unite.AI &mdash; &ldquo;Scaling AI Shouldn't Mean Rebuilding Data Foundations Every Time&rdquo; (Benoit Jacquemont, Akeneo CTO, Oct 20, 2026)</a></li>
+                          <li><a href="https://www.akeneo.com/blog/dwyeromega-akeneo-mcp-part-1/" style="color:#2563eb;text-decoration:none;">Akeneo &mdash; How DwyerOmega Uses Akeneo MCP to Unlock Operational Excellence (Part 1)</a></li>
+                          <li><a href="https://www.akeneo.com/it/blog/gartner-magic-quadrant-pim-akeneo-leader-2026/" style="color:#2563eb;text-decoration:none;">Akeneo &mdash; Italian localisation of the Leader announcement (Oct 15, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Salsify <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Two items. <strong>Correction to last week's report</strong>: per the Gartner MQ document and independent analysis, <strong>Salsify was placed as the only Challenger in the 2026 PIM MQ</strong>, not a Leader. The Oct 13 Salsify LinkedIn post referenced &ldquo;Ability to Execute and Completeness of Vision&rdquo;; the actual quadrant position is Challenger. <strong>Oct 22, 2026 Salsify &times; Shoppers Drug Mart webinar</strong> launched a new <strong>Shoppers Drug Mart vendor-portal partnership</strong>: suppliers submit required attributes through Salsify's vendor portal with automated validation, review/approval and live PDP updates &mdash; <strong>zero cost to suppliers</strong>; PXM Activation customers can also syndicate through Salsify. The US Part 3 of &ldquo;AI in Salsify: A Practical Playbook for Agentic Commerce Readiness&rdquo; with Otterly.ai remains Oct 27.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> The Challenger placement sharpens the competitive picture: Salsify's PIM MQ Caution is explicitly its B2B/industrial-manufacturing footprint, and its MCP is still described as &ldquo;in pilot&rdquo; by independent analysis. The Shoppers Drug Mart deal is classic Salsify execution &mdash; retailer-side syndication partnerships at zero cost to suppliers &mdash; but is MCP-adjacent at most.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.salsify.com/resources/webinar-salsify-shoppers-drug-mart-vendor-portal" style="color:#2563eb;text-decoration:none;">Salsify &times; Shoppers Drug Mart: Exploring the Salsify Vendor Portal (Webinar, Oct 22, 2026)</a></li>
+                          <li><a href="https://www.salsify.com/retailers/shoppersdrugmart" style="color:#2563eb;text-decoration:none;">Salsify &mdash; Syndicate to Shoppers Drug Mart (retailer landing page)</a></li>
+                          <li><a href="https://www.gartner.com/en/documents/8496777" style="color:#2563eb;text-decoration:none;">Gartner Magic Quadrant for Product Information Management Solutions (Oct 12, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">3. Notable Patterns</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>&ldquo;Autonomous&rdquo; is this quarter's category label.</strong> Reltio formally renames AgentFlow to <strong>Autonomous agents</strong> and ships Long Running Tasks + Unstructured search as GA; SAP's TechEd track is titled &ldquo;Become the autonomous enterprise&rdquo;; Profisee's 2026 R3 Aisey already configures FastApps and matching strategies in-conversation; Inriver adds an agentic critique loop for translations. The category has moved past &ldquo;AI assistant&rdquo; wording in two quarters.</li>
+                  <li style="margin-bottom:6px;"><strong>MCP continues to show up as the plumbing beneath &ldquo;autonomous&rdquo; products</strong> &mdash; Reltio's Autonomous agents docs explicitly state the capability is &ldquo;built on the MCP server&rdquo;; Informatica's Oct 2026 MDM release ties Slack-based stewardship directly to MCP servers; Inriver's Query Manager MCP gains recursive channel traversal and snapshot-version access. Still <strong>zero MCP 2026-07-28 compatibility statements</strong> from the tracked nine (twelve weeks post-spec).</li>
+                  <li style="margin-bottom:0;"><strong>The Gartner PIM MQ picture is clearer than last week.</strong> Confirmed tracked-set positions (per the Gartner document): Leaders &mdash; Akeneo, Inriver, Salesforce (Informatica), Stibo Systems, Syndigo; Challenger &mdash; Salsify (only one); Visionary &mdash; Pimcore (now with a positioning statement). This replaces last week's inference that six of nine tracked vendors were Leaders.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">4. No Relevant Updates</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:4px;"><strong>Profisee</strong> &mdash; This week's items (Oct 15 LinkedIn R3 recap) restate the Oct 12 R3 story already covered. Watching Profisee Anywhere GA December.</li>
+                  <li style="margin-bottom:0;"><strong>Syndigo</strong> &mdash; Oct 15 Leader press release already covered; Item Management 8.78 October release notes posted in the customer community but no public agent/MCP delta.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">5. Suggested Follow-Up</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;">Request the Gartner PIM MQ via one of the Leader pages (Akeneo, Inriver, Informatica, Syndigo, Stibo). The &ldquo;Strengths and Cautions&rdquo; sections will clarify why Salsify is a Challenger and Pimcore a Visionary &mdash; useful ammunition for Stibo's own Leader position.</li>
+                  <li style="margin-bottom:6px;">Prepare a response posture to the Reltio 2026.2 <strong>&ldquo;Autonomous agents&rdquo;</strong> rename for internal AR and sales enablement. The capability renames (Autonomous agents / Unstructured augmentation / Custom agents / Discover agents) are likely to become the de facto category vocabulary in SAP + enterprise RFPs by Q1 2027; align Stibo messaging where appropriate without copying it.</li>
+                  <li style="margin-bottom:0;">Review the SAP TechEd Berlin MCP sessions (IN202 / IN261 / AD161 / BT160&ndash;161) for live-event signals the week of Oct 27&ndash;31. SAP's Oct 27 content will set the ceiling for how aggressively MDM/MDG vendors should talk about &ldquo;verified MCP servers only&rdquo; in competitive deals.</li>
+                </ul>
+
+                <p style="margin:28px 0 0 0;font-size:12px;color:#6b7280;">Prepared for Mark Janssen, Stibo Systems. Sources link to publicly available pages. No speculative content included. &ldquo;MCP-adjacent&rdquo; is used where sources discuss AI agents, semantic layers or AI-ready data access without explicitly naming MCP.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
