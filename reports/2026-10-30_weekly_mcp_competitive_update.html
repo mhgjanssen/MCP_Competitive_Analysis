@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weekly MCP Competitive Update – October 23, 2026 to October 30, 2026</title>
+  </head>
+  <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1f2937;line-height:1.5;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f4f5f7;">
+      <tr>
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="background:#0f172a;padding:20px 24px;color:#ffffff;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;">Weekly MCP Competitive Update</div>
+                <div style="font-size:18px;font-weight:600;margin-top:4px;">October 23, 2026 &mdash; October 30, 2026</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:24px;">
+                <p style="margin:0 0 16px 0;">Hi Mark,</p>
+                <p style="margin:0 0 16px 0;">Here is this week's concise MCP competitive intelligence update.</p>
+
+                <h2 style="margin:24px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">1. Executive Summary</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>SAP TechEd Berlin (Oct 27&ndash;29) delivers the biggest MCP announcement of the quarter.</strong> The new <strong>SAP Enterprise AI Gateway</strong> (premium offering on SAP Business AI Platform) becomes the centralized control plane for AI traffic &mdash; MCPs, APIs, A2A and LLMs &mdash; with unified authentication, policy enforcement, routing, monitoring, usage tracking and auditing. Developers can discover and subscribe to MCP servers from any provider from one place. Joule Work gets agentic thinking + n8n workflow triggers; SAP Knowledge Graph extends to customer-specific SAP and non-SAP data; a new AI Governance Assistant addresses the EU AI Act.</li>
+                  <li style="margin-bottom:6px;"><strong>SAP Reltio is now Generally Available inside SAP Business Data Cloud</strong> (Oct 29 SAP News Center). Multi-domain MDM is now natively part of the SAP business data fabric alongside SAP MDG for S/4HANA &mdash; Reltio's AI-based entity resolution unifies SAP and non-SAP records into 360-degree profiles for Joule and third-party agents.</li>
+                  <li style="margin-bottom:6px;"><strong>Informatica opens a second MCP distribution channel this week.</strong> Its <strong>Headless Data Management Catalog Discovery MCP is now available as a trusted semantic source directly within Oracle Select AI</strong> (Oracle Database 26ai), showcased with Oracle at Oracle AI World Las Vegas (Oct 26&ndash;28). Same week, the Oct 27 Tech Tuesday delivered the <strong>Customer Identification MCP Server for MDM SaaS</strong> plus a new composite MDM-Provenance server (<code>get_master_record_sources</code> / <code>get_master_field_provenance</code> / <code>get_source_record</code>) &mdash; bringing the Informatica native MCP catalog to <strong>20 shared servers plus composite</strong>.</li>
+                  <li style="margin-bottom:6px;"><strong>Reltio 2026.2 continues to roll out post-GA.</strong> The <strong>Integrated Development Experience</strong> (AI-powered VS Code + Cursor extension) GA'd Oct 30 with workflow / Life Cycle Action authoring; bi-weekly <strong>2026.2.1.0</strong> (DEV/TEST Oct 30, PRD Nov 6) adds <strong>CU-usage monitoring for autonomous agents provisioned through SAP BDC</strong> and <strong>APIs for managing long-running tasks</strong>. Oct 29 Reltio Community Show detailed Unstructured search architecture (50 GB knowledge bases, 25 per tenant).</li>
+                  <li style="margin-bottom:0;"><strong>No MCP 2026-07-28 compatibility statements yet from the tracked nine</strong> (thirteen weeks post-spec). &ldquo;Autonomous enterprise&rdquo; messaging continues to converge: SAP, Reltio, Profisee and Informatica all now use autonomous-agent language in their current product pages.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">2. Key Updates This Week</h2>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">SAP MDG <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> SAP TechEd Berlin (Oct 27&ndash;29) delivered a dense MCP-focused week. The Oct 27 press release <em>&ldquo;SAP Empowers AI Developers to Build What Matters and Turn Intent into Autonomous Execution&rdquo;</em> introduces <strong>SAP Enterprise AI Gateway</strong> &mdash; a premium offering on SAP Business AI Platform that becomes the single control plane for AI traffic (MCPs, APIs, A2A, LLMs) with consolidated auth / policy / routing / monitoring / usage tracking / auditing. Developers get a consistent interface for discovering and subscribing to third-party MCP servers and reusing existing APIs/integration flows as agent-ready capabilities. Joule Work adds agentic thinking (multistep workflow planning) and the ability to trigger deterministic n8n workflows; <strong>SAP Knowledge Graph</strong> now ingests customer-specific SAP and non-SAP data for natural-language querying; a new <strong>AI Governance Assistant</strong> targets EU AI Act compliance. In parallel, the Oct 29 SAP News Center feature on SAP Lakehouse / Data Fabric innovations in SAP BDC announces <strong>native Apache Iceberg + Apache Polaris catalog</strong>, <strong>Dremio-powered federated zero-copy querying</strong> (across Databricks, Snowflake, Google, AWS, Microsoft, plus SQL Server / MongoDB / Oracle / Postgres), the new <strong>BDC Ontology Manager</strong> AI-native authoring experience, and the new <strong>SAP-RPT-2.0</strong> tabular foundation model.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> SAP Enterprise AI Gateway is the first vendor-controlled governed MCP distribution layer in the tracked set that explicitly accepts third-party MCP servers on equal footing. Combined with Oct 27 confirmation that <strong>SAP Reltio is GA inside SAP BDC</strong>, SAP has now shipped both the governance control plane (Agent Hub + Enterprise AI Gateway) and the unification data plane (MDG + Reltio) for the autonomous enterprise narrative.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.prnewswire.com/news-releases/sap-empowers-ai-developers-to-build-what-matters-and-turn-intent-into-autonomous-execution-302920376.html" style="color:#2563eb;text-decoration:none;">SAP News &mdash; &ldquo;SAP Empowers AI Developers to Build What Matters and Turn Intent into Autonomous Execution&rdquo; (Oct 27, 2026)</a></li>
+                          <li><a href="https://news.sap.com/2026/10/sap-lakehouse-new-data-fabric-innovations-sap-bdc-autonomous-enterprise/" style="color:#2563eb;text-decoration:none;">SAP News Center &mdash; &ldquo;Advancing SAP Lakehouse and New Data Fabric Innovations in SAP BDC&rdquo; (Oct 29, 2026)</a></li>
+                          <li><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-sap-enterprise-ai-gateway-control-and-visibility-across-agents/ba-p/14510567" style="color:#2563eb;text-decoration:none;">SAP Community &mdash; &ldquo;Introducing SAP Enterprise AI Gateway: Control and Visibility Across Agents&rdquo; (SAP TechEd 2026)</a></li>
+                          <li><a href="https://www.sap.com/topics/events/teched/innovation-news-guide-2026" style="color:#2563eb;text-decoration:none;">SAP TechEd Innovation News Guide 2026</a></li>
+                          <li><a href="https://siliconangle.com/2026/10/27/sap-advances-its-autonomous-enterprise-push-with-smarter-governed-joule-agents/" style="color:#2563eb;text-decoration:none;">SiliconANGLE &mdash; &ldquo;SAP advances its autonomous enterprise push with smarter, governed Joule agents&rdquo; (Oct 27, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Reltio <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Three concurrent moves this week. First, <strong>SAP Reltio is now Generally Available inside SAP BDC</strong>, confirmed by the Oct 29 SAP News Center feature: Reltio brings AI-based entity resolution and multi-domain master data management natively into the business data fabric, complementing SAP MDG (MDG = central governance at the SAP source; Reltio = enterprise-wide unification across SAP and non-SAP). Second, the <strong>Integrated Development Experience</strong> &mdash; AI-powered VS Code + Cursor extension &mdash; <strong>GA'd Oct 30</strong> with support for <strong>workflows (BPMN visualisation + live validation + deploy history)</strong> and <strong>Life Cycle Actions (LCA code generated from AI prompts, deployed to the customer's own AWS / GCP / Azure)</strong>. Third, bi-weekly <strong>2026.2.1.0</strong> rolled to DEV/TEST Oct 30 (PRD Nov 6): <strong>CU-usage monitoring for autonomous agents provisioned through SAP BDC</strong> (so SAP BDC customers can track agent-run consumption in the shared SAP Capacity Unit pool), and <strong>APIs for managing long-running tasks</strong> (discover published agents, schedule recurring agent runs, trigger / monitor jobs, retrieve per-entity results at scale). The Oct 29 Reltio Community blog on <strong>Unstructured search</strong> fleshes out the Oct 23 GA with concrete architecture (ingest / index / retrieve / cite pipeline, S3 / Google Drive / Azure sources, PDF / Word / HTML / PowerPoint / Markdown / CSV formats, up to 50 GB per knowledge base and 25 per tenant, licensing via Reltio context intelligence + autonomous agentic licenses).</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Reltio now has three live distribution channels &mdash; standalone, inside SAP BDC, and embeddable in third-party IDEs via the GA developer extension. SAP BDC CU-based consumption monitoring is the first vendor-grade enterprise-billing primitive built around MCP-driven autonomous agents in the tracked set.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://news.sap.com/2026/10/sap-lakehouse-new-data-fabric-innovations-sap-bdc-autonomous-enterprise/" style="color:#2563eb;text-decoration:none;">SAP News Center &mdash; SAP Reltio GA in SAP BDC (Oct 29, 2026)</a></li>
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/2026.2-release-notes/2026.2-bi-weekly-release-notes-rn" style="color:#2563eb;text-decoration:none;">Reltio Docs &mdash; 2026.2.1.0 Bi-weekly Release Notes (DEV/TEST Oct 30, PRD Nov 6, 2026)</a></li>
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/2026.2-release-notes/2026.2-major-release-notes" style="color:#2563eb;text-decoration:none;">Reltio Docs &mdash; 2026.2 Major Release Notes (Integrated development experience GA Oct 30, 2026)</a></li>
+                          <li><a href="https://community.reltio.com/blogs/sara-brams-miller/2026/10/29/community-show-unstructured-search" style="color:#2563eb;text-decoration:none;">Reltio Community &mdash; &ldquo;Community Show: Unstructured search: Smarter data, smarter decisions&rdquo; (Oct 29, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Informatica <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Two MCP-explicit moves inside one week. First, Oct 27 Informatica blog by Rob Cornell <em>&ldquo;Informatica Headless + Oracle Select AI: Enterprise-Wide Business Context for Oracle Database Customers&rdquo;</em> announces that Informatica's <strong>Headless Data Management Catalog Discovery MCP is now a trusted semantic source directly inside Oracle Select AI</strong> (built into Oracle Autonomous AI Database on Oracle Database 26ai). Select AI pulls governed CDGC glossary / term / asset definitions at prompt time, so natural-language queries resolve to consistent, auditable SQL with the catalog context exposed for human review. Showcased live with Oracle at Oracle AI World Las Vegas (Oct 26&ndash;28). Second, the Oct 27 Tech Tuesday <em>&ldquo;Bridging AI Assistants with Verified Master Records&rdquo;</em> (Ankit Tripathi) delivered the <strong>Customer Identification MCP Server for MDM SaaS</strong>, with two first-party tools (<code>search_master_record</code> fuzzy identity search; <code>get_master_record_details</code>) plus a new <strong>composite MDM-Provenance server</strong> adding <code>get_master_record_sources</code>, <code>get_master_field_provenance</code> and <code>get_source_record</code> &mdash; making the pattern &ldquo;answer who it is + prove why to trust it&rdquo;. The webinar also confirms the native Informatica MCP catalog now numbers <strong>20 shared / managed servers</strong> across Customer &amp; Data, Governance &amp; Catalog, and Operate IDMC &mdash; plus customer-built composite servers.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> This is the first week MCP shows up as both a <em>distribution</em> channel (Oracle Database 26ai) and as a <em>provenance</em> layer (Informatica composite MDM-Provenance server) &mdash; i.e. the vendor is answering buyer concerns about trust and auditability of agent answers at the same time it widens the install-base reach.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.informatica.com/blogs/informatica-headless-oracle-select-ai-enterprise-wide-business-context-for-oracle-database-customers.html" style="color:#2563eb;text-decoration:none;">Informatica blog &mdash; &ldquo;Informatica Headless + Oracle Select AI&rdquo; (Rob Cornell, Oct 27, 2026)</a></li>
+                          <li><a href="https://success.informatica.com/explore/tt-webinars/bridging-ai-assistants-with-verified-master-records--exploring-t.html" style="color:#2563eb;text-decoration:none;">Informatica Tech Tuesdays &mdash; &ldquo;Bridging AI Assistants with Verified Master Records: Exploring the Customer Identification MCP Server for MDM SaaS&rdquo; (Oct 27, 2026)</a></li>
+                          <li><a href="https://docs.informatica.com/claire/mcp-servers/current-version/getting-started-with-informatica-mcp-servers/shared-mcp-servers/customer-identification-server.html" style="color:#2563eb;text-decoration:none;">Informatica Docs &mdash; Customer Identification MCP Server (shared server reference)</a></li>
+                          <li><a href="https://success.informatica.com/content/dam/informatica-cxp/techtuesdays-slides-pdf/Bridging%20AI%20Assistants%20with%20Verified%20Master%20Records%20Exploring%20the%20Customer%20Identification%20MCP%20Server%20for%20MDM%20SaaS.pdf" style="color:#2563eb;text-decoration:none;">Informatica Tech Tuesday slides PDF &mdash; Customer Identification MCP + MDM-Provenance composite server (Oct 27, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Pimcore <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Oct 28 Pimcore blog by Ashley Laing (VP North America) &mdash; &ldquo;Automated Cut Sheets for Building Products: Why the PDF Is Always Out of Date.&rdquo;</strong> Positions PIM-driven, automatically-regenerated cut sheets as the core governance play for building-products manufacturers: the PDF rebuilds itself from the golden product record so finishes, dimensions, images and certifications can never drift from the live catalog. No new MCP, Agent Bundle or Datahub release in the Oct 23&ndash;30 window (last platform release was 2026.3.3.1 on Oct 22).</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> MCP-adjacent at most &mdash; governed-data-as-source-of-truth messaging without explicit MCP terminology. Noted mostly to confirm Pimcore stays on the &ldquo;data must be clean before AI can act on it&rdquo; narrative established by the Oct 19 Visionary blog, now pushed into a specific vertical (building products / cut sheets).</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://pimcore.com/en/resources/blog/automated-cut-sheets-for-building-products-why-the-pdf-is-always-out-of-date" style="color:#2563eb;text-decoration:none;">Pimcore blog &mdash; &ldquo;Automated Cut Sheets for Building Products&rdquo; (Ashley Laing, Oct 28, 2026)</a></li>
+                          <li><a href="https://github.com/pimcore/pimcore/releases" style="color:#2563eb;text-decoration:none;">Pimcore GitHub releases (no new tag in the Oct 23&ndash;30 window)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Salsify <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> The <strong>Oct 27 US Part 3 of &ldquo;AI in Salsify: A Practical Playbook for Agentic Commerce Readiness&rdquo; with Otterly.ai</strong> was delivered (Nathan Teplow + Marisa Borek / Salsify; Thomas Peham + Rick Tousseyn / Otterly.ai) &mdash; joint live demo of Salsify's syndication workflows alongside Otterly.ai's agentic analytics, positioning Salsify as a &ldquo;system of delivery&rdquo; to publish product data to the agentic shelf. Separately, the Oct 27 Salsify blog <em>&ldquo;AI Path to Purchase: Winning the New Rules of AEO for Ecommerce and GEO&rdquo;</em> recaps the final installment of the Salsify + DetailPage three-part AI path to purchase webinar series: DetailPage CEO Spencer Millerberg notes <strong>ChatGPT is moving away from scraping retailer PDPs and increasingly relying on structured retailer product feeds</strong>, which materially raises the value of the data brands send to retailers via syndication. No MCP terminology in either artefact &mdash; Salsify remains the only tracked PIM Challenger in Gartner's Oct 12 MQ.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Salsify is doubling down on the &ldquo;agentic commerce = retailer-side distribution problem&rdquo; framing without touching MCP vocabulary. That keeps a widening gap between Salsify's AI positioning (first-party MCP server + Angie assistant for configuration workflows) and its field marketing (agentic commerce readiness without MCP references).</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.salsify.com/blog/winning-the-new-rules-of-aeo-for-ecommerce-and-geo" style="color:#2563eb;text-decoration:none;">Salsify blog &mdash; &ldquo;AI Path to Purchase: Winning the New Rules of AEO for Ecommerce and GEO&rdquo; (Chris Caesar, Oct 27, 2026)</a></li>
+                          <li><a href="https://www.linkedin.com/posts/salsify_agenticcommerce-pxm-ecommerce-activity-7516860547078774785-eLhV" style="color:#2563eb;text-decoration:none;">Salsify / Otterly.ai &mdash; Oct 27 Part 3 webinar announcement (Salsify LinkedIn)</a></li>
+                          <li><a href="https://www.salsify.com/resources/webinar/ai-in-salsify-a-practical-playbook-for-agentic-commerce-readiness" style="color:#2563eb;text-decoration:none;">Salsify &mdash; &ldquo;AI in Salsify: A Practical Playbook for Agentic Commerce Readiness&rdquo; (3-part series page)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">3. Notable Patterns</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>SAP has shipped a two-plane architecture for governed MCP.</strong> SAP AI Agent Hub (Oct 1 GA) + the new SAP Enterprise AI Gateway (TechEd Oct 27) now provide a <em>governance / discovery</em> plane, while SAP MDG + SAP Reltio (GA in SAP BDC Oct 29) + SAP Knowledge Graph + Dremio-powered federated zero-copy query provide the <em>trusted-data</em> plane for agents. No other tracked vendor currently matches this control-plane breadth.</li>
+                  <li style="margin-bottom:6px;"><strong>MCP-provenance (not just MCP-access) is the new differentiator.</strong> Informatica's new composite <strong>MDM-Provenance</strong> server (3 tools: <code>get_master_record_sources</code> / <code>get_master_field_provenance</code> / <code>get_source_record</code>) is the first explicit &ldquo;prove why to trust the agent's answer&rdquo; MCP tool-set this quarter, directly answering the audit / hallucination objections buyers raise against agent-driven stewardship. Reltio's RBAC / masking / audit framing of its MCP server and Pimcore's chat-session bearer tokens point in the same direction.</li>
+                  <li style="margin-bottom:0;"><strong>Enterprise distribution channels for MCP widen quickly.</strong> Informatica Headless MCP now plugged into Oracle Database 26ai Select AI; Reltio in SAP BDC with CU-based consumption metering and a GA'd Cursor/VS Code extension; SAP Enterprise AI Gateway exposing third-party MCP servers under governed subscription. Buyers no longer need a greenfield agent platform to consume a vendor's MCP &mdash; the install base they already own may ship it next.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">4. No Relevant Updates</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:4px;"><strong>Profisee</strong> &mdash; No new primary source content in the Oct 23&ndash;30 window; 2026 R3 is still the current message. Watching Profisee Anywhere GA in December 2026.</li>
+                  <li style="margin-bottom:4px;"><strong>Akeneo</strong> &mdash; No new primary source content this week. The DwyerOmega &times; Akeneo MCP <strong>Part 2</strong> promised by the Oct 14 Part 1 blog has still not been published; social amplification of Part 1 continues (Oct 19&ndash;20 LinkedIn by Andrew Simpson, Samira McDonald).</li>
+                  <li style="margin-bottom:4px;"><strong>Inriver</strong> &mdash; Oct 24&ndash;25 and Oct 29 (Media) release notes shipped incremental UI, syndication and media bug-fixes with no MCP delta. Last MCP Server (Query Manager) change remains the Oct 10&ndash;11 recursive-traversal + snapshot-tag updates.</li>
+                  <li style="margin-bottom:0;"><strong>Syndigo</strong> &mdash; No new primary source content in this window. Last MCP-adjacent moves remain the Oct 15 PIM MQ Leader press release and the Aug 19 State of PX 2026 study.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">5. Suggested Follow-Up</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>Treat SAP Enterprise AI Gateway as a competitive milestone, not just a messaging milestone.</strong> The combination of free Agent Hub (up to 500 agents) + governed MCP subscription + Reltio GA in SAP BDC is a credible lock-in for SAP installed-base MDM buyers. Prepare a Stibo talking-track that compares the Stibo MCP governance posture to the Enterprise AI Gateway's auth / policy / routing / monitoring controls on a feature-level basis.</li>
+                  <li style="margin-bottom:6px;"><strong>Match the &ldquo;MCP-provenance&rdquo; framing in Stibo messaging.</strong> Informatica's composite MDM-Provenance server (and Reltio's &ldquo;all actions routed through MCP server, allowlisted tools only, full audit&rdquo; wording) sets a bar for how MDM vendors answer the agent-hallucination objection. Stibo should quote its own equivalent provenance guarantees in the same terminology.</li>
+                  <li style="margin-bottom:0;"><strong>Watch for an Informatica Oracle AI World follow-on in Nov</strong> (post-event amplification + Headless MCP in Oracle Select AI case studies). The Oracle Database 26ai install base is the single biggest net-new MCP distribution channel the tracked vendors have opened this quarter.</li>
+                </ul>
+
+                <p style="margin:28px 0 0 0;font-size:12px;color:#6b7280;">Prepared for Mark Janssen, Stibo Systems. Sources link to publicly available pages. No speculative content included. &ldquo;MCP-adjacent&rdquo; is used where sources discuss AI agents, semantic layers or AI-ready data access without explicitly naming MCP.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
