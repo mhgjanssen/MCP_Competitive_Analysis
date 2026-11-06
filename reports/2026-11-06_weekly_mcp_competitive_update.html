@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weekly MCP Competitive Update – October 30, 2026 to November 6, 2026</title>
+  </head>
+  <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1f2937;line-height:1.5;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f4f5f7;">
+      <tr>
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="background:#0f172a;padding:20px 24px;color:#ffffff;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;">Weekly MCP Competitive Update</div>
+                <div style="font-size:18px;font-weight:600;margin-top:4px;">October 30, 2026 &mdash; November 6, 2026</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:24px;">
+                <p style="margin:0 0 16px 0;">Hi Mark,</p>
+                <p style="margin:0 0 16px 0;">Here is this week's concise MCP competitive intelligence update.</p>
+
+                <h2 style="margin:24px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">1. Executive Summary</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>Syndigo signs a multi-year strategic partnership with Microsoft</strong> (Nov 2), integrating Microsoft Foundry and Agent 365 with Product Experience Cloud and co-selling through Microsoft's global salesforce under a new &ldquo;Frontier Commerce&rdquo; positioning. First hyperscaler-level alliance in the PIM/PXM set since the SAP&ndash;Reltio deal, and a direct Microsoft Fabric-adjacent counter to Profisee Anywhere.</li>
+                  <li style="margin-bottom:6px;"><strong>Akeneo publishes DwyerOmega &times; Akeneo MCP Part 2</strong> (Nov 4), the long-awaited follow-through to its October production case study. Concrete numbers now in the public record: 82 acquired product series onboarded in ~40 minutes each via MCP + Claude + local OCR, with a read-only Power BI catalog-quality dashboard and human approval on every write.</li>
+                  <li style="margin-bottom:6px;"><strong>Reltio 2026.2.1.0 reaches production Nov 6</strong> with Capacity Unit usage monitoring for autonomous agents provisioned through SAP BDC, APIs for managing Long-Running Tasks (schedule, trigger, monitor, retrieve per-entity results at scale), and APIs for retrieving and updating Autonomous Agent Custom Instructions &mdash; first programmatic control plane for Reltio's MCP-based agents.</li>
+                  <li style="margin-bottom:6px;"><strong>SAP TechEd follow-up clarifies timing:</strong> SAP Enterprise AI Gateway is announced with no date (expected Q1 2027), the inbound Agent Gateway for third-party agents calling Joule Agents is GA now, and the AI Governance Assistant ships via Early Adopter Care in November.</li>
+                  <li style="margin-bottom:0;"><strong>Fifteen weeks post-spec, still zero MCP 2026-07-28 compatibility statements</strong> from any of the nine tracked vendors. &ldquo;Frontier Commerce,&rdquo; &ldquo;autonomous enterprise&rdquo; and &ldquo;autonomous agents&rdquo; continue to dominate the messaging &mdash; more about hyperscaler alignment than protocol conformance.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">2. Key Updates This Week</h2>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Syndigo <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> On Nov 2, 2026 Syndigo announced a multi-year strategic partnership agreement with Microsoft to develop and co-sell AI-powered commerce solutions integrating <strong>Microsoft Foundry, Agent 365</strong> and other Microsoft services through Microsoft's global sales organization. Syndigo Product Experience Cloud (MDM, PIM, syndication) runs on Microsoft Azure; Syndigo AI Services for PX Cloud are built on Azure; Syndigo solutions are purchasable through Microsoft Marketplace and eligible toward customers' <strong>Microsoft Azure Consumption Commitment (MACC)</strong>. CEO Simon Angove frames this as &ldquo;Frontier Commerce&rdquo; &mdash; Microsoft's Frontier Transformation applied to commerce, with product data as the AI foundation for stores, online channels and AI shopping experiences. Internally Syndigo is adopting <strong>Microsoft 365 E7</strong> so Copilot and Agent 365 run across Syndigo's own teams.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> This is the first Microsoft Global ISV-level commercial alliance in the PIM/PXM tracked set and directly contests Profisee's &ldquo;Trusted data for AI agents on Microsoft&rdquo; messaging ahead of Profisee Anywhere's December GA. MCP-adjacent (Foundry and Agent 365 are MCP-aware platforms) but Syndigo's own release does not yet use the &ldquo;MCP&rdquo; term &mdash; the lever is distribution and co-sell, not protocol.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://syndigo.com/news/syndigo-microsoft-ai-commerce-partnership/" style="color:#2563eb;text-decoration:none;">Syndigo News &mdash; &ldquo;Syndigo Signs Multi-Year Strategic Partnership Agreement with Microsoft&rdquo; (Nov 2, 2026)</a></li>
+                          <li><a href="https://www.globenewswire.com/news-release/2026/11/02/3393208/0/en/syndigo-signs-multi-year-strategic-partnership-agreement-with-microsoft-to-develop-and-co-sell-ai-powered-commerce-solutions.html" style="color:#2563eb;text-decoration:none;">GlobeNewswire &mdash; same press release, wire version (Nov 2, 2026)</a></li>
+                          <li><a href="https://syndigo.com/blog/what-frontier-commerce-means-and-why-it-starts-with-data/" style="color:#2563eb;text-decoration:none;">Syndigo blog &mdash; &ldquo;What Frontier Commerce Means, and Why It Starts with Data&rdquo; (Simon Angove, Nov 2, 2026)</a></li>
+                          <li><a href="https://syndigo.com/partners/microsoft/" style="color:#2563eb;text-decoration:none;">Syndigo &times; Microsoft partner page</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Akeneo <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#065f46;background:#d1fae5;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">New</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> On Nov 4, 2026 Akeneo published <em>&ldquo;From Product Data to Operational Intelligence: How DwyerOmega Puts Akeneo MCP to Work&rdquo;</em> (Samira McDonald) &mdash; the long-trailed Part 2 of the DwyerOmega &times; Akeneo MCP case study. Part 2 covers what runs on top of the Part 1 MCP pipeline: (a) a <strong>read-only Power BI catalog-quality dashboard</strong> filtered by product manager / model that shows where products miss targets for images, 360&deg; spins, alt text, descriptions, CAD files, cross-sell and SEO metadata and exports a work list &mdash; explicitly not a second place to edit; (b) a Claude-driven AI-assisted enrichment workflow that locates manuals and spec sheets from Akeneo records, extracts technical content with local OCR and a local language model, and proposes capability-led descriptions for product-manager review before writing back into Akeneo; (c) an acquisition-onboarding workflow that scrapes an acquired company's product series, loads supporting assets into SharePoint, mirrors images into AWS, creates the asset in Akeneo and builds the product series with a placeholder variant and basic information &mdash; <strong>82 product series onboarded in about 40 minutes each</strong> in the first few weeks. DwyerOmega keeps dashboard, enrichment and acquisition flows read-first and human-approved; no agent writes to Akeneo without a steward reviewing it.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> This is the most-detailed public first-party MCP-in-production customer story in the PIM set to date and lands as direct ammunition against Salsify's &ldquo;MCP in pilot&rdquo; posture and Syndigo's and Inriver's roadmap-only agentic positioning. The governance posture (read-only dashboards, human-reviewed writes) is exactly the &ldquo;governed-MCP&rdquo; narrative Stibo Systems emphasises and is now a competitive reference for Akeneo.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.akeneo.com/blog/dwyeromega-mcp-server-part-2/" style="color:#2563eb;text-decoration:none;">Akeneo blog &mdash; &ldquo;From Product Data to Operational Intelligence: How DwyerOmega Puts Akeneo MCP to Work&rdquo; (Samira McDonald, Nov 4, 2026)</a></li>
+                          <li><a href="https://talk-commerce.com/blog/dwyeromega-onboards-an-acquired-product-series-in-40-minutes-with-akeneo-mcp" style="color:#2563eb;text-decoration:none;">Talk Commerce &mdash; &ldquo;DwyerOmega Onboards an Acquired Product Series in 40 Minutes With Akeneo MCP&rdquo; (Brent W. Peterson, Nov 4, 2026)</a></li>
+                          <li><a href="https://pimvendors.com/knowledge-base/signal/mcp-in-production-pim-agent-governance-dwyeromega" style="color:#2563eb;text-decoration:none;">PIMvendors &mdash; &ldquo;MCP Leaves the Demo: What DwyerOmega's Akeneo Setup Shows About Governing Agents in Product Data&rdquo;</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Reltio <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Reltio 2026.2.1.0 rolled to production on <strong>Nov 6, 2026</strong> (DEV/TEST was Oct 30). Three new capabilities in this bi-weekly: (1) <strong>Capacity Unit (CU) usage monitoring</strong> for autonomous agents provisioned through SAP BDC &mdash; the Usage Dashboard in autonomous agents now shows CU consumption across the shared SAP BDC pool, with per-agent and per-tenant daily tracking; (2) <strong>Agent custom instructions APIs</strong> for retrieving and updating an agent's custom instructions with content-guardrail checks, lock-status awareness, and chunked/encoded updates; (3) <strong>Long-Running Tasks (LRT) APIs</strong> extending what was previously UI-only &mdash; discover published agents, create and manage schedules for recurring or one-time agent runs, trigger and monitor long-running jobs, retrieve per-entity results at scale. The <strong>Autonomous Agents MCP Server documentation</strong> was republished on Nov 5, 2026 reaffirming the OAuth 2.0 / role-aware / policy-aware governance model.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> This is the first programmatic control plane for an MCP-based master-data agent in the tracked set &mdash; a customer or partner can now script every stage of an autonomous MDM agent (configure instructions &rarr; schedule &rarr; trigger &rarr; monitor &rarr; fetch results) from outside the Reltio UI, which materially raises the integration ceiling for Reltio inside Joule, Microsoft Copilot, Claude Enterprise and other hosts. CU monitoring is the first MCP-native enterprise-metering primitive we've seen.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://docs.reltio.com/en/reltio/release-notes-at-a-glance/2026.2-release-notes/2026.2-bi-weekly-release-notes-rn" style="color:#2563eb;text-decoration:none;">Reltio Docs &mdash; &ldquo;2026.2.1.0 RN | 06-Nov-2026&rdquo; bi-weekly release notes</a></li>
+                          <li><a href="https://docs.reltio.com/en/developer-resources/ai-integrations/reltio-model-context-protocol-mcp-server-at-a-glance/autonomous-agents-mcp-server" style="color:#2563eb;text-decoration:none;">Reltio Docs &mdash; &ldquo;Autonomous agents MCP Server&rdquo; (updated Nov 5, 2026)</a></li>
+                          <li><a href="https://docs.reltio.com/en/developer-resources/ai-integrations/reltio-model-context-protocol-mcp-server-at-a-glance/build-a-custom-mcp-client-for-autonomous-agents" style="color:#2563eb;text-decoration:none;">Reltio Docs &mdash; &ldquo;Build a custom MCP client for autonomous agents&rdquo;</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">SAP MDG <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Post-TechEd coverage this week clarifies status and timing: (a) <strong>SAP Enterprise AI Gateway</strong> remains &ldquo;announced with no date or price&rdquo; &mdash; third-party trackers converge on a <strong>Q1 2027</strong> target; (b) the <strong>inbound Agent Gateway</strong> for third-party agents calling Joule Agents is <strong>GA as of October 2026</strong> (two-way outbound to third-party/self-hosted agents is still &ldquo;future direction&rdquo;); (c) the <strong>AI Governance Assistant</strong> inside SAP AI Agent Hub ships via <strong>Early Adopter Care in November 2026</strong>, drafting EU AI Act fact sheets, pre-filling fields from completed assessments and flagging unclassified high-risk agents; (d) the Oct 30 SAP Community blog <em>&ldquo;Introducing SAP Enterprise AI Gateway&rdquo;</em> and SAP News Center <em>&ldquo;How to Lead with AI Governance&rdquo;</em> reconfirm that verification status from SAP AI Agent Hub gates runtime invocation for both agents and MCP tools &mdash; <strong>unverified MCP tools or agents cannot be called from production</strong>. A separate SAP Community webinar page (&ldquo;SAP Reltio in the SAP Business AI Platform Architecture&rdquo;) formalises a four-phase partner integration roadmap for SAP Reltio inside SAP BDC with MDG as the central-governance anchor.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> SAP has GA'd the <em>governance checkpoint</em> that denies MCP calls from unverified sources, but the full <em>control plane</em> (Enterprise AI Gateway) is still a 2027 story &mdash; leaves a window where competitive messaging around a ready-today, cross-vendor MCP governance posture still resonates for Stibo Systems.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://news.sap.com/2026/10/sap-teched-shows-how-to-lead-with-ai-governance/" style="color:#2563eb;text-decoration:none;">SAP News Center &mdash; &ldquo;SAP TechEd Shows How to Lead with AI Governance&rdquo; (Oct 2026)</a></li>
+                          <li><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-sap-enterprise-ai-gateway-control-and-visibility-across-agents/ba-p/14510567" style="color:#2563eb;text-decoration:none;">SAP Community &mdash; &ldquo;Introducing SAP Enterprise AI Gateway: Control and Visibility Across Agents&rdquo; (Oct 30, 2026)</a></li>
+                          <li><a href="https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-reltio-in-the-sap-business-ai-platform-architecture/ba-p/14498303" style="color:#2563eb;text-decoration:none;">SAP Community &mdash; &ldquo;SAP Reltio in the SAP Business AI Platform Architecture&rdquo; webinar</a></li>
+                          <li><a href="https://erpfde.com/topics/sap-teched-2026-for-ai-builders/" style="color:#2563eb;text-decoration:none;">Orchestrate &mdash; &ldquo;What SAP TechEd 2026 changed for AI builders&rdquo; (updated Nov 3, 2026)</a></li>
+                          <li><a href="https://ipaas.it/en/blog/sap-teched-2026-enterprise-ai-gateway/" style="color:#2563eb;text-decoration:none;">ipaas.it &mdash; &ldquo;SAP TechEd 2026: SAP wants its own gateway for AI traffic&rdquo;</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">3. Notable Patterns</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>Hyperscaler alliances are the new battlefield.</strong> Within one quarter, SAP has pulled Reltio inside SAP BDC, Informatica has plugged Catalog Discovery MCP into Oracle Database 26ai, Profisee has committed to Fabric OneLake (Anywhere GA Dec), and Syndigo has now signed a Microsoft Global ISV multi-year co-sell. MCP is increasingly less a product feature and more the protocol that lets these alliances expose their data to the hyperscaler's AI control plane.</li>
+                  <li style="margin-bottom:6px;"><strong>Customer-proof is becoming the scarce asset, not product capability.</strong> Akeneo DwyerOmega Part 2 (82 series &times; 40 min, delta refresh 2.5&ndash;3 h) and Reltio &times; Pfizer (80&ndash;90% due-diligence cut, 30&ndash;40% stewardship-backlog cut) are now the most-cited MCP references in the set. The vendors with the most-detailed public production stories are pulling ahead of those still publishing roadmaps.</li>
+                  <li style="margin-bottom:0;"><strong>Programmable governance is the next sub-category.</strong> Reltio 2026.2.1.0 adds APIs for custom instructions, long-running tasks and CU-usage monitoring; Informatica's composite MDM-Provenance server and Secure MCP Gateway point in the same direction; SAP's inbound Agent Gateway + AI Agent Hub verification check does it at the control plane. &ldquo;MCP you can plug in&rdquo; is being superseded by &ldquo;MCP you can audit, meter, instruct and schedule from code.&rdquo;</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">4. No Relevant Updates</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:4px;"><strong>Informatica</strong> &mdash; No new blog, release note or Tech Tuesday in this window. The Nov 10 and Nov 17 Tech Tuesdays are focused on cloud integration and CDGC UI, not MCP.</li>
+                  <li style="margin-bottom:4px;"><strong>Profisee</strong> &mdash; No new product content; Profisee Anywhere remains on track for December 2026 GA; no new Aisey / MCP announcement.</li>
+                  <li style="margin-bottom:4px;"><strong>Salsify</strong> &mdash; Nov 5 blog (&ldquo;What Does Using AI Search to Find &lsquo;the Best Products&rsquo; Actually Mean&rdquo;) is GEO-focused and does not mention MCP; &ldquo;What's New at Salsify: Into 2027&rdquo; webinar is scheduled for Nov 18 and should be the next catalyst.</li>
+                  <li style="margin-bottom:4px;"><strong>Inriver</strong> &mdash; Oct 31 / Nov 1 and Nov 4 Brand Store release notes contain CVL-dependency, Shopify and CSV-export improvements only; no MCP Server or AI-agent delta.</li>
+                  <li style="margin-bottom:0;"><strong>Pimcore</strong> &mdash; v2026.3.4 released Nov 3 (bugfixes plus a dense set of security patches &mdash; 20+ GHSA advisories). No change to the Agent Bundle beta or Datahub Simple REST MCP.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">5. Suggested Follow-Up</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:4px;">Profile the Syndigo &times; Microsoft partnership against Stibo Systems' Microsoft Fabric / Azure messaging before the Nov 18 Salsify &ldquo;Into 2027&rdquo; webinar &mdash; Microsoft co-sell is now a shared competitive battleground between Syndigo, Profisee and Stibo Systems.</li>
+                  <li style="margin-bottom:4px;">Pre-read Akeneo DwyerOmega Part 2 before customer calls. It is the clearest competitive benchmark for &ldquo;governed MCP&rdquo; in product data today and will likely be cited in RFPs within weeks.</li>
+                  <li style="margin-bottom:0;">Monitor the Nov 18 Salsify &ldquo;What's New: Into 2027&rdquo; webinar for any first explicit MCP GA statement from Salsify (currently still described as &ldquo;in pilot&rdquo; in the Oct Gartner PIM MQ analysis).</li>
+                </ul>
+
+                <p style="margin:24px 0 0 0;color:#475569;font-size:13px;">Prepared by the MCP Competitive Intelligence agent. Sources are hyperlinked above; this report only includes items with publicly verifiable primary or credible secondary sources.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
