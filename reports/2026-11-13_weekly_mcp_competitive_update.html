@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weekly MCP Competitive Update – November 6, 2026 to November 13, 2026</title>
+  </head>
+  <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1f2937;line-height:1.5;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f4f5f7;">
+      <tr>
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="background:#0f172a;padding:20px 24px;color:#ffffff;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;">Weekly MCP Competitive Update</div>
+                <div style="font-size:18px;font-weight:600;margin-top:4px;">November 6, 2026 &mdash; November 13, 2026</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:24px;">
+                <p style="margin:0 0 16px 0;">Hi Mark,</p>
+                <p style="margin:0 0 16px 0;">Here is this week's concise MCP competitive intelligence update.</p>
+
+                <h2 style="margin:24px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">1. Executive Summary</h2>
+                <ul style="margin:0 0 0 0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>Informatica formalises a &ldquo;Three Pillars + Gov/Trust Gateway&rdquo; MCP architecture</strong> at the Nov 10 Tech Tuesday &mdash; the MCP catalog is now backed by an explicit multi-tenant control plane with OAuth 2.0/2.1, prompt-injection and PII input safety, human-in-the-loop escalation and bulk circuit breakers. Pairs with a Nov 6 demo video in which CDGC sensitivity classification plus the Omni Gateway blocks HIPAA-protected context from reaching AI agents in real time.</li>
+                  <li style="margin-bottom:6px;"><strong>Syndigo turns the Microsoft deal into a governance narrative.</strong> New Nov 10 blog by CPO Tarun Chandrasekar (&ldquo;You're Not Deploying an Agent. You're Deploying a Liability.&rdquo;) positions agentic AI as an accountability and data-trust problem, cites Gartner's 40%+ agentic-project cancellation forecast and references Microsoft Frontier Tuning &mdash; the first strategic follow-through to the Nov 2 Microsoft Global ISV partnership.</li>
+                  <li style="margin-bottom:6px;"><strong>Pimcore's MCP footprint gains a public reference implementation.</strong> At Pimcore Community Dev Days 2026 (Nov 10 Frankfurt) Sebastian Bergmann keynoted on coding agents and CKEditor DevRel Ond&#345;ej Chrastina shipped the open-source &ldquo;Pimcore AI Guidepost&rdquo; &mdash; a Pimcore 2026.3 skeleton with 44 agent skills, an AGENTS.md map and the Datahub Simple REST MCP server wired in.</li>
+                  <li style="margin-bottom:6px;"><strong>Pimcore v2026.3.5 (Nov 10&ndash;11) adds agent-relevant security hardening</strong> &mdash; restricted <code>unserialize()</code> for document editables, signed WebDAV delete log, read-only stand-ins for stored expression evaluation, editable-password masking and view-permission enforcement on frontend previews. No Agent Bundle feature changes.</li>
+                  <li style="margin-bottom:0;"><strong>Sixteen weeks post-spec, still zero MCP 2026-07-28 compatibility statements</strong> from any of the nine tracked vendors. SAP Enterprise AI Gateway remains &ldquo;announced, no date&rdquo; (Q1 2027 target); Reltio 2026.2.2.0's DEV/TEST deployment slipped from Nov 13 to Nov 16 with PRD still Nov 20.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">2. Key Updates This Week</h2>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Informatica <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> The <strong>Nov 10, 2026 Tech Tuesday &ldquo;Data You Can Trust: Building Enterprise-Grade Integration in the Cloud&rdquo;</strong> (Sreehari Desai, Dihitha Sai Nadella) formally documents the architecture under Informatica's MCP catalog as a <strong>&ldquo;Three Pillars&rdquo;</strong> framework &mdash; Headless Integration (API-first, 500+ connectors, Secure Agent hybrid runtime), Real-Time Data Quality (in-flight validation across five quality dimensions) and Enterprise Governance (lineage, policy-as-code for GDPR/HIPAA/CCPA, searchable catalog). The slide deck exposes a <strong>multi-tenant &ldquo;Gov/Trust Gateway&rdquo;</strong> between engagement surfaces (AI agents, apps) and the IDMC MCP servers, enforcing OAuth 2.0/2.1 authentication, prompt-injection/PII input safety, human-in-the-loop escalation and circuit breakers on bulk hard limits &mdash; with CDGC Metadata Search, CDGC Data Quality Score, Job Management and CLAIRE Orchestrator named as the agent-facing MCP servers. A companion <strong>Nov 6 support video &ldquo;Protecting Sensitive Data with MCP Trust Gates &amp; CDGC Classification&rdquo;</strong> demonstrates CDGC free-text sensitivity classification combined with Omni Gateway route-ceiling policies blocking HIPAA-protected clinical visit reasons from reaching an AI agent without manual intervention.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> This is the clearest public Informatica articulation yet of MCP as a <em>governed enterprise control plane</em>, not just a set of connectors. The Gov/Trust Gateway diagram is the first time Informatica has publicly described its own equivalent of SAP's AI Agent Hub verification layer and MuleSoft's Omni Gateway for its MCP catalog, raising the bar on &ldquo;enterprise-grade MCP&rdquo; messaging for Stibo Systems.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://success.informatica.com/explore/tt-webinars/data-you-can-trust--building-enterprise-grade-integration-in-the.html" style="color:#2563eb;text-decoration:none;">Informatica Success Portal &mdash; Tech Tuesday &ldquo;Data You Can Trust: Building Enterprise-Grade Integration in the Cloud&rdquo; (Nov 10, 2026)</a></li>
+                          <li><a href="https://success.informatica.com/content/dam/informatica-cxp/techtuesdays-slides-pdf/Data%20You%20Can%20Trust%20Building%20Enterprise%20-%20Grade%20Integration%20in%20the%20Cloud.pdf" style="color:#2563eb;text-decoration:none;">Tech Tuesday slide deck (PDF) &mdash; &ldquo;Data You Can Trust&rdquo; with Informatica MCP Servers Technical Architecture</a></li>
+                          <li><a href="https://success.informatica.com/videos/support-videos/Yi2mjassXWc.html" style="color:#2563eb;text-decoration:none;">Informatica Support &mdash; &ldquo;Protecting Sensitive Data with MCP Trust Gates &amp; CDGC Classification&rdquo; (Nov 6, 2026)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Syndigo <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> On <strong>Nov 10, 2026</strong> Syndigo Chief Product Officer Tarun Chandrasekar published <em>&ldquo;You're Not Deploying an Agent. You're Deploying a Liability.&rdquo;</em> &mdash; the first strategic positioning piece after the Nov 2 Microsoft Global ISV partnership. The post reframes the agentic-AI risk conversation as a <em>governance and accountability</em> problem (not a model problem), cites <strong>Gartner's forecast that more than 40% of agentic-AI projects will be cancelled by the end of 2027</strong>, and argues leaders must answer two questions before deploying an agent &mdash; <em>who verifies the data the agent is grounded in, and who is accountable when a decision is wrong</em>. The piece references <strong>Microsoft Frontier Tuning (private preview)</strong> as an example of tuning small models on customer-specific workflows instead of relying on frontier models alone, tying Syndigo's PX Cloud + Microsoft Azure footprint to that direction.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> This is Syndigo's post-partnership narrative &mdash; it is now positioning Synapse / PX Cloud explicitly as the <em>trusted-data accountability layer</em> under agentic commerce running on Microsoft Foundry and Agent 365. MCP-adjacent (no explicit MCP mention) but it tightens the &ldquo;governed data for agents&rdquo; messaging that Stibo Systems, Profisee, Akeneo and Reltio are all competing on.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://syndigo.com/blog/agentic-ai-trusted-data-governance/" style="color:#2563eb;text-decoration:none;">Syndigo blog &mdash; &ldquo;You're Not Deploying an Agent. You're Deploying a Liability.&rdquo; (Tarun Chandrasekar, Nov 10, 2026)</a></li>
+                          <li><a href="https://syndigo.com/news/syndigo-microsoft-ai-commerce-partnership/" style="color:#2563eb;text-decoration:none;">Syndigo News &mdash; Nov 2, 2026 Microsoft Global ISV partnership (context)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Pimcore <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> Two developments this week. (1) <strong>Pimcore Community Dev Days 2026 (PCDD) delivered Nov 10, 2026 in Frankfurt</strong> &mdash; the agenda centred on AI coding agents: <strong>Sebastian Bergmann</strong> (author of PHPUnit) keynoted &ldquo;Development with Coding Agents&rdquo; on using LLM tools safely with PHP/Symfony/PHPStan guardrails, and <strong>Ond&#345;ej Chrastina</strong> (Developer Advocate at CKEditor) presented &ldquo;AI Best Practices for Your Product&rdquo; and open-sourced the <strong>Pimcore AI Guidepost</strong> &mdash; a working Pimcore 2026.3 skeleton with <strong>44 vendored agent skills</strong>, an <code>AGENTS.md</code> map of Pimcore's AI resources, and the <strong>Datahub Simple REST MCP server</strong> wired in. The guidepost explicitly identifies the Agent Bundle's guardrails and the Datahub Simple REST MCP as the two MCP-facing doors into Pimcore today. (2) <strong>Pimcore v2026.3.5 released Nov 10&ndash;11, 2026</strong> &mdash; a maintenance release with ~5 GHSA security patches including restricted <code>unserialize()</code> for document editables (<code>pimcore.documents.editables.unserialize_allowed_classes</code>), a signed WebDAV delete log, read-only stand-ins for stored expression evaluation, editable-password masking and view-permission enforcement on frontend object preview. No Agent Bundle beta or Datahub Simple REST MCP feature changes.</p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> The guidepost is the first public, runnable third-party reference implementation of Pimcore's MCP surface and adds narrative weight to Pimcore's Visionary PIM MQ positioning; the 2026.3.5 security patches continue Pimcore's pattern of pushing agent-relevant hardening (serialization, auth, expression evaluation) into maintenance releases.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.pluswerk.digital/en/about-us/pluswerk-at-events/pimcore-community-dev-days-2026" style="color:#2563eb;text-decoration:none;">PCDD 2026 agenda &mdash; Pimcore Community Dev Days, Frankfurt (Nov 10, 2026)</a></li>
+                          <li><a href="https://ondrej.chrastina.dev/talks/ai-best-practices-for-your-product-pcdd-2026/" style="color:#2563eb;text-decoration:none;">Ond&#345;ej Chrastina &mdash; &ldquo;AI Best Practices for Your Product&rdquo; talk (Nov 10, 2026)</a></li>
+                          <li><a href="https://github.com/Simply007/pcdd26-pimcore-ai-guidepost" style="color:#2563eb;text-decoration:none;">Pimcore AI Guidepost &mdash; GitHub (Simply007/pcdd26-pimcore-ai-guidepost)</a></li>
+                          <li><a href="https://github.com/pimcore/pimcore/releases" style="color:#2563eb;text-decoration:none;">Pimcore v2026.3.5 release notes &mdash; GitHub (Nov 11, 2026)</a></li>
+                          <li><a href="https://docs.pimcore.com/platform/Pimcore/Upgrade_Notes/" style="color:#2563eb;text-decoration:none;">Pimcore 2026.3.5 upgrade notes &mdash; security changes</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa;">
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-weight:600;color:#0f172a;">Salsify <span style="display:inline-block;margin-left:8px;font-size:11px;font-weight:600;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.04em;">Updated</span></div>
+                      <p style="margin:8px 0 6px 0;"><strong>Summary:</strong> <strong>Nov 12, 2026 blog &ldquo;The Digital Shelf Is Evolving &mdash; Is Your Commercial Strategy?&rdquo;</strong> (Lisa Schrumpf, Salsify) recaps the &ldquo;One Source of Truth&rdquo; panel at the Digital Shelf Summit London with Revlon, Ansell and Lindt &amp; Spr&uuml;ngli. The post argues that AI-powered discovery (not keyword search) will increasingly determine which products get surfaced, considered and purchased, and that brands need governed, structured, trustworthy product data as the foundation for agentic commerce. Positions Salsify as the &ldquo;single, trusted source of product information&rdquo; layer that agentic shopping assistants depend on. <strong>No reference to the Model Context Protocol by name.</strong></p>
+                      <p style="margin:0 0 6px 0;"><strong>Why it matters:</strong> Salsify continues the AEO/GEO-focused agentic-commerce positioning it has used all autumn, and keeps steering around an explicit MCP statement. Reinforces the pattern we flagged last week &mdash; the Nov 18 &ldquo;What's New at Salsify: Into 2027&rdquo; webinar remains the next realistic catalyst for any first explicit Salsify MCP GA announcement. MCP-adjacent only.</p>
+                      <div style="margin-top:6px;font-size:13px;color:#475569;">
+                        <strong>Source:</strong>
+                        <ul style="margin:4px 0 0 0;padding-left:18px;">
+                          <li><a href="https://www.salsify.com/blog/the-digital-shelf-is-evolving-is-your-commercial-strategy-salsify" style="color:#2563eb;text-decoration:none;">Salsify blog &mdash; &ldquo;The Digital Shelf Is Evolving &mdash; Is Your Commercial Strategy?&rdquo; (Lisa Schrumpf, Nov 12, 2026)</a></li>
+                          <li><a href="https://www.salsify.com/resources/webinar/whats-new-at-salsify-q4-2026" style="color:#2563eb;text-decoration:none;">Salsify &mdash; &ldquo;What's New at Salsify: Into 2027&rdquo; webinar (Nov 18, 2026, upcoming)</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">3. Notable Patterns</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:6px;"><strong>&ldquo;Gov/Trust Gateway&rdquo; is becoming the shared MCP reference architecture.</strong> Informatica's Three Pillars deck (Nov 10) joins SAP Enterprise AI Gateway, SAP AI Agent Hub verification, Reltio's OAuth 2.0 MCP server, Pimcore's native OAuth 2.0 server and MuleSoft's Omni Gateway in a now-converged pattern: a dedicated control plane between AI agents and enterprise MCP tools enforcing auth, policy, PII/prompt-injection safety, HITL and circuit breakers. &ldquo;MCP you plug in&rdquo; is being quietly replaced by &ldquo;MCP behind a gateway you govern.&rdquo;</li>
+                  <li style="margin-bottom:6px;"><strong>CPO-level narrative shifts from product to accountability.</strong> Syndigo's Nov 10 CPO post and Informatica's Gov/Trust Gateway framing both move the agentic-AI discussion up from capability to <em>liability and verification</em>, mirroring Reltio's and SAP's &ldquo;autonomous agents under human oversight&rdquo; positioning. The competitive battleground is shifting from feature lists to governance posture.</li>
+                  <li style="margin-bottom:0;"><strong>Community-driven agent evidence is now a competitive asset.</strong> Last week Akeneo had DwyerOmega Part 2; this week Pimcore gains a public third-party AI Guidepost that makes its MCP surface explorable in minutes. Vendors whose MCP surface is only documented in release notes risk losing mindshare to those whose MCP surface has runnable community references.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">4. No Relevant Updates</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:4px;"><strong>SAP MDG</strong> &mdash; No new MCP-material primary content this week. SAP Enterprise AI Gateway status unchanged (Q1 2027 target); AI Governance Assistant Early Adopter Care window still November.</li>
+                  <li style="margin-bottom:4px;"><strong>Reltio</strong> &mdash; Nov 10 Community Show (&ldquo;Fresh look, familiar workflows: UI Modernization in Reltio&rdquo;) is non-MCP. 2026.2.2.0 DEV/TEST deployment rescheduled from Nov 13 to Nov 16 with PRD still Nov 20 &mdash; next MCP-material delta expected then.</li>
+                  <li style="margin-bottom:4px;"><strong>Profisee</strong> &mdash; No new press, blog or release note. Profisee Anywhere remains on track for December 2026 GA.</li>
+                  <li style="margin-bottom:4px;"><strong>Akeneo</strong> &mdash; No new primary content after last week's DwyerOmega Part 2. Next scheduled catalyst is the Winter release cycle preview.</li>
+                  <li style="margin-bottom:0;"><strong>Inriver</strong> &mdash; Nov 7&ndash;8 release notes (masked extension settings in audit log, REST API enhancements for Language Roles) and Nov 9 Inspire UI update (Enrich / Generate &amp; translate workspace redesign) contain no MCP Server or AI-agent delta.</li>
+                </ul>
+
+                <h2 style="margin:28px 0 8px 0;font-size:16px;color:#0f172a;border-bottom:1px solid #e5e7eb;padding-bottom:6px;">5. Suggested Follow-Up</h2>
+                <ul style="margin:0;padding-left:20px;">
+                  <li style="margin-bottom:4px;">Benchmark Informatica's &ldquo;Gov/Trust Gateway&rdquo; against Stibo Systems' own MCP control-plane messaging. The Nov 10 slide deck is now a concrete reference competitors will point to in RFPs; our positioning on auth, PII/prompt-injection safety, HITL escalation and circuit breakers should answer the same seven checkboxes.</li>
+                  <li style="margin-bottom:4px;">Pre-read Syndigo's &ldquo;Deploying a Liability&rdquo; blog before any customer conversation touching Microsoft Fabric / Agent 365. Syndigo is explicitly positioning its data layer as the accountability layer for agentic commerce on Microsoft; Stibo Systems' MDM governance story should foreground the same &ldquo;who verifies the data, who is accountable&rdquo; framing.</li>
+                  <li style="margin-bottom:0;">Monitor Nov 18 Salsify &ldquo;Into 2027&rdquo; webinar and Nov 20 Reltio 2026.2.2.0 GA &mdash; both are the next realistic MCP-material catalysts in the set.</li>
+                </ul>
+
+                <p style="margin:24px 0 0 0;color:#475569;font-size:13px;">Prepared by the MCP Competitive Intelligence agent. Sources are hyperlinked above; this report only includes items with publicly verifiable primary or credible secondary sources.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
